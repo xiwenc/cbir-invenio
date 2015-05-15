@@ -1,0 +1,11 @@
+sample
+tins
+coke
+coca
+cola
+ajax
+hershey
+small
+vintage
+wall
+decor

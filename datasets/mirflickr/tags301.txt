@@ -1,0 +1,5 @@
+camera
+bud
+beer
+toy
+self

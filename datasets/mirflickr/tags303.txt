@@ -1,0 +1,12 @@
+dynamicphotohdr
+enfuse
+hdr
+hdri
+japan
+panoramic
+stereographic
+tokyo
+tonemapped
+geotagged
+geo:lat=356753903
+geo:lon=1398277125

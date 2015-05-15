@@ -1,0 +1,12 @@
+nürnberg
+nuremberg
+norisring
+dtm
+car
+audi
+racing
+geotagged
+speedweekend
+christijanalbers
+geo:lat=49430375
+geo:lon=1112635

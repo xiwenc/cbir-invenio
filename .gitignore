@@ -1,0 +1,17 @@
+articles
+docs
+libs
+pkgs
+resources
+samples
+tmp
+src/build
+target
+src/tags
+.DS_Store
+*.swp
+*.swo
+*.swn
+*.pyc
+*.log
+*.gz
