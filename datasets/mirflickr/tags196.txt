@@ -1,5 +1,0 @@
-barco
-pesca
-boattosail
-navegação
-navigation

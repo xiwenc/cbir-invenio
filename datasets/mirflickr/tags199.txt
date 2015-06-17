@@ -1,6 +1,0 @@
-church
-sanctuary
-holywater
-hdr
-dof
-vanishingpoint

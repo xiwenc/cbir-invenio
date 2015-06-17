@@ -1,0 +1,7 @@
+cat
+rosie
+jinny
+tabatha
+burmese
+asleep
+lazy

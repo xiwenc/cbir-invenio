@@ -1,9 +1,0 @@
-to1224
-jl08
-london
-londres
-wesminster
-bigben
-geo:lat=51501093
-geo:lon=0124892
-geotagged

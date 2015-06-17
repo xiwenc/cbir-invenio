@@ -1,0 +1,5137 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: build/ukbench-precisiontranspose-points.eps
+%%Creator: gnuplot 5.0 patchlevel 0
+%%CreationDate: Sun Jun 14 11:52:25 2015
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 266
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -33 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 266 lineto 50 266 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.0 (Dec 2014)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (build/ukbench-precisiontranspose-points.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.0 patchlevel 0)
+  /Author (xcheng)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Sun Jun 14 11:52:25 2015)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%
+% Support for boxed text - Ethan A Merritt May 2005
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { Boxing
+    { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if } def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox 1 1 1 setrgbcolor fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 100 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 4320.00 BoxColFill} if
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+390 2500 M
+63 0 V
+6566 0 R
+-63 0 V
+stroke
+330 2500 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 0)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+390 2696 M
+63 0 V
+6566 0 R
+-63 0 V
+stroke
+330 2696 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 0.2)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+390 2892 M
+63 0 V
+6566 0 R
+-63 0 V
+stroke
+330 2892 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 0.4)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+390 3087 M
+63 0 V
+6566 0 R
+-63 0 V
+stroke
+330 3087 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 0.6)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+390 3283 M
+63 0 V
+6566 0 R
+-63 0 V
+stroke
+330 3283 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 0.8)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+390 3479 M
+63 0 V
+6566 0 R
+-63 0 V
+stroke
+330 3479 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 1)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+390 2500 M
+stroke
+390 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-1000-02-canny-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+604 2500 M
+stroke
+604 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-2000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+818 2500 M
+stroke
+818 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-2000-02-slic-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1032 2500 M
+stroke
+1032 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-2000-02-otsu-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1245 2500 M
+stroke
+1245 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-1000-02-none-bow-images)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1459 2500 M
+stroke
+1459 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-1000-02-otsu-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1673 2500 M
+stroke
+1673 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-1000-02-otsu-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1887 2500 M
+stroke
+1887 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-2000-02-canny-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2101 2500 M
+stroke
+2101 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-1000-02-canny-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2315 2500 M
+stroke
+2315 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-1000-02-canny-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2528 2500 M
+stroke
+2528 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-1000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2742 2500 M
+stroke
+2742 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-2000-02-none-bow-images)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2956 2500 M
+stroke
+2956 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-2000-02-canny-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3170 2500 M
+stroke
+3170 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-2000-02-otsu-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3384 2500 M
+stroke
+3384 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-2000-02-canny-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3598 2500 M
+stroke
+3598 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-som-2000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3811 2500 M
+stroke
+3811 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-2000-02-none-bow-images)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4025 2500 M
+stroke
+4025 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-som-1000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4239 2500 M
+stroke
+4239 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-1000-02-otsu-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4453 2500 M
+stroke
+4453 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-1000-02-slic-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4667 2500 M
+stroke
+4667 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-som-1000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4881 2500 M
+stroke
+4881 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-2000-02-otsu-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5094 2500 M
+stroke
+5094 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-2000-02-canny-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5308 2500 M
+stroke
+5308 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-1000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5522 2500 M
+stroke
+5522 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-2000-02-otsu-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5736 2500 M
+stroke
+5736 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-som-2000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5950 2500 M
+stroke
+5950 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-2000-02-slic-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6164 2500 M
+stroke
+6164 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-1000-02-canny-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6377 2500 M
+stroke
+6377 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-1000-02-otsu-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6591 2500 M
+stroke
+6591 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (sift-kmeans-1000-02-slic-tfidf-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6805 2500 M
+stroke
+6805 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-1000-02-none-bow-images)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+7019 2500 M
+stroke
+7019 2440 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (surf-kmeans-2000-02-slic-lsi-segments)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+390 3479 N
+0 -979 V
+6629 0 V
+0 979 V
+-6629 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UP
+1.000 UL
+LTb
+0.48 0.14 0.56 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 4217 M
+(ukbench00002.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.48 0.14 0.56 C 353 4217 M
+255 0 V
+390 3153 M
+214 0 V
+214 0 V
+214 -327 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 653 V
+214 -326 V
+213 -653 V
+214 979 V
+214 -653 V
+214 653 V
+214 -326 V
+214 -327 V
+213 653 V
+214 -979 V
+214 653 V
+214 -653 V
+214 0 V
+214 653 V
+213 0 V
+214 0 V
+214 -327 V
+214 -326 V
+214 653 V
+214 0 V
+213 0 V
+214 0 V
+214 326 V
+214 -326 V
+390 3153 Crs
+604 3153 Crs
+818 3153 Crs
+1032 2826 Crs
+1245 3479 Crs
+1459 2826 Crs
+1673 2826 Crs
+1887 2826 Crs
+2101 3479 Crs
+2315 3153 Crs
+2528 2500 Crs
+2742 3479 Crs
+2956 2826 Crs
+3170 3479 Crs
+3384 3153 Crs
+3598 2826 Crs
+3811 3479 Crs
+4025 2500 Crs
+4239 3153 Crs
+4453 2500 Crs
+4667 2500 Crs
+4881 3153 Crs
+5094 3153 Crs
+5308 3153 Crs
+5522 2826 Crs
+5736 2500 Crs
+5950 3153 Crs
+6164 3153 Crs
+6377 3153 Crs
+6591 3153 Crs
+6805 3479 Crs
+7019 3153 Crs
+481 4217 Crs
+% End plot #1
+% Begin plot #2
+1.000 UP
+1.000 UL
+LTb
+0.43 0.82 0.25 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 4137 M
+(ukbench00007.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.43 0.82 0.25 C 353 4137 M
+255 0 V
+390 3479 M
+214 0 V
+214 0 V
+214 -326 V
+213 326 V
+214 -326 V
+214 0 V
+214 0 V
+214 326 V
+214 -653 V
+213 -326 V
+214 979 V
+214 -653 V
+214 653 V
+214 0 V
+214 -979 V
+213 979 V
+214 -979 V
+214 979 V
+214 -979 V
+214 979 V
+214 0 V
+213 0 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 0 V
+214 0 V
+214 -326 V
+390 3479 Star
+604 3479 Star
+818 3479 Star
+1032 3153 Star
+1245 3479 Star
+1459 3153 Star
+1673 3153 Star
+1887 3153 Star
+2101 3479 Star
+2315 2826 Star
+2528 2500 Star
+2742 3479 Star
+2956 2826 Star
+3170 3479 Star
+3384 3479 Star
+3598 2500 Star
+3811 3479 Star
+4025 2500 Star
+4239 3479 Star
+4453 2500 Star
+4667 3479 Star
+4881 3479 Star
+5094 3479 Star
+5308 3153 Star
+5522 3153 Star
+5736 3153 Star
+5950 3153 Star
+6164 3153 Star
+6377 3479 Star
+6591 3479 Star
+6805 3479 Star
+7019 3153 Star
+481 4137 Star
+% End plot #2
+% Begin plot #3
+1.000 UP
+1.000 UL
+LTb
+0.62 0.02 0.38 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 4057 M
+(ukbench00009.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.62 0.02 0.38 C 353 4057 M
+255 0 V
+390 3153 M
+604 2500 L
+214 0 V
+214 653 V
+213 -327 V
+214 0 V
+214 0 V
+214 -326 V
+214 653 V
+214 -653 V
+213 326 V
+214 0 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+213 979 V
+214 -979 V
+214 0 V
+214 326 V
+214 -326 V
+214 326 V
+213 -326 V
+214 0 V
+214 653 V
+214 -653 V
+214 326 V
+214 -326 V
+213 0 V
+214 326 V
+214 327 V
+214 -327 V
+390 3153 Box
+604 2500 Box
+818 2500 Box
+1032 3153 Box
+1245 2826 Box
+1459 2826 Box
+1673 2826 Box
+1887 2500 Box
+2101 3153 Box
+2315 2500 Box
+2528 2826 Box
+2742 2826 Box
+2956 2500 Box
+3170 2500 Box
+3384 2500 Box
+3598 2500 Box
+3811 3479 Box
+4025 2500 Box
+4239 2500 Box
+4453 2826 Box
+4667 2500 Box
+4881 2826 Box
+5094 2500 Box
+5308 2500 Box
+5522 3153 Box
+5736 2500 Box
+5950 2826 Box
+6164 2500 Box
+6377 2500 Box
+6591 2826 Box
+6805 3153 Box
+7019 2826 Box
+481 4057 Box
+% End plot #3
+% Begin plot #4
+1.000 UP
+1.000 UL
+LTb
+0.75 0.25 0.09 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 3977 M
+(ukbench00013.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.75 0.25 0.09 C 353 3977 M
+255 0 V
+390 2500 M
+214 0 V
+214 0 V
+214 0 V
+213 979 V
+214 -653 V
+214 0 V
+214 -326 V
+214 0 V
+214 0 V
+213 326 V
+214 653 V
+214 -979 V
+214 326 V
+214 327 V
+214 -653 V
+213 653 V
+214 -653 V
+214 326 V
+214 0 V
+214 -326 V
+214 326 V
+213 327 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 653 V
+214 -653 V
+390 2500 BoxF
+604 2500 BoxF
+818 2500 BoxF
+1032 2500 BoxF
+1245 3479 BoxF
+1459 2826 BoxF
+1673 2826 BoxF
+1887 2500 BoxF
+2101 2500 BoxF
+2315 2500 BoxF
+2528 2826 BoxF
+2742 3479 BoxF
+2956 2500 BoxF
+3170 2826 BoxF
+3384 3153 BoxF
+3598 2500 BoxF
+3811 3153 BoxF
+4025 2500 BoxF
+4239 2826 BoxF
+4453 2826 BoxF
+4667 2500 BoxF
+4881 2826 BoxF
+5094 3153 BoxF
+5308 2500 BoxF
+5522 2500 BoxF
+5736 2500 BoxF
+5950 2500 BoxF
+6164 2500 BoxF
+6377 2826 BoxF
+6591 2500 BoxF
+6805 3153 BoxF
+7019 2500 BoxF
+481 3977 BoxF
+% End plot #4
+% Begin plot #5
+1.000 UP
+1.000 UL
+LTb
+0.89 0.20 0.69 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 3897 M
+(ukbench00016.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.89 0.20 0.69 C 353 3897 M
+255 0 V
+390 2826 M
+214 0 V
+214 0 V
+214 0 V
+213 327 V
+214 -653 V
+214 0 V
+214 326 V
+214 0 V
+214 0 V
+213 -326 V
+214 979 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+213 327 V
+214 -653 V
+214 653 V
+214 -653 V
+214 0 V
+214 326 V
+213 0 V
+214 -326 V
+214 326 V
+214 -326 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 653 V
+214 -653 V
+390 2826 Circle
+604 2826 Circle
+818 2826 Circle
+1032 2826 Circle
+1245 3153 Circle
+1459 2500 Circle
+1673 2500 Circle
+1887 2826 Circle
+2101 2826 Circle
+2315 2826 Circle
+2528 2500 Circle
+2742 3479 Circle
+2956 2826 Circle
+3170 2826 Circle
+3384 2826 Circle
+3598 2826 Circle
+3811 3153 Circle
+4025 2500 Circle
+4239 3153 Circle
+4453 2500 Circle
+4667 2500 Circle
+4881 2826 Circle
+5094 2826 Circle
+5308 2500 Circle
+5522 2826 Circle
+5736 2500 Circle
+5950 2500 Circle
+6164 2500 Circle
+6377 2826 Circle
+6591 2500 Circle
+6805 3153 Circle
+7019 2500 Circle
+481 3897 Circle
+% End plot #5
+% Begin plot #6
+1.000 UP
+1.000 UL
+LTb
+0.72 0.46 0.22 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 3817 M
+(ukbench00020.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.72 0.46 0.22 C 353 3817 M
+255 0 V
+390 2500 M
+214 326 V
+214 0 V
+214 -326 V
+213 653 V
+214 -327 V
+214 0 V
+214 -326 V
+214 0 V
+214 0 V
+213 0 V
+214 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 0 V
+214 0 V
+214 653 V
+214 -653 V
+213 0 V
+214 0 V
+214 0 V
+214 653 V
+214 -653 V
+214 0 V
+213 326 V
+214 -326 V
+214 326 V
+214 -326 V
+390 2500 CircleF
+604 2826 CircleF
+818 2826 CircleF
+1032 2500 CircleF
+1245 3153 CircleF
+1459 2826 CircleF
+1673 2826 CircleF
+1887 2500 CircleF
+2101 2500 CircleF
+2315 2500 CircleF
+2528 2500 CircleF
+2742 3153 CircleF
+2956 2500 CircleF
+3170 2500 CircleF
+3384 2500 CircleF
+3598 2500 CircleF
+3811 2826 CircleF
+4025 2500 CircleF
+4239 2500 CircleF
+4453 2500 CircleF
+4667 3153 CircleF
+4881 2500 CircleF
+5094 2500 CircleF
+5308 2500 CircleF
+5522 2500 CircleF
+5736 3153 CircleF
+5950 2500 CircleF
+6164 2500 CircleF
+6377 2826 CircleF
+6591 2500 CircleF
+6805 2826 CircleF
+7019 2500 CircleF
+481 3817 CircleF
+% End plot #6
+% Begin plot #7
+1.000 UP
+1.000 UL
+LTb
+0.87 0.19 0.35 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 3737 M
+(ukbench00025.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.87 0.19 0.35 C 353 3737 M
+255 0 V
+390 3479 M
+604 2826 L
+214 0 V
+214 327 V
+213 326 V
+214 -653 V
+214 327 V
+214 326 V
+214 0 V
+214 -326 V
+213 0 V
+214 326 V
+214 0 V
+214 0 V
+214 -326 V
+214 -653 V
+213 979 V
+214 -326 V
+214 326 V
+214 -326 V
+214 -327 V
+214 653 V
+213 -326 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+214 326 V
+213 0 V
+214 0 V
+214 0 V
+214 -326 V
+390 3479 TriU
+604 2826 TriU
+818 2826 TriU
+1032 3153 TriU
+1245 3479 TriU
+1459 2826 TriU
+1673 3153 TriU
+1887 3479 TriU
+2101 3479 TriU
+2315 3153 TriU
+2528 3153 TriU
+2742 3479 TriU
+2956 3479 TriU
+3170 3479 TriU
+3384 3153 TriU
+3598 2500 TriU
+3811 3479 TriU
+4025 3153 TriU
+4239 3479 TriU
+4453 3153 TriU
+4667 2826 TriU
+4881 3479 TriU
+5094 3153 TriU
+5308 3153 TriU
+5522 3153 TriU
+5736 3153 TriU
+5950 3153 TriU
+6164 3479 TriU
+6377 3479 TriU
+6591 3479 TriU
+6805 3479 TriU
+7019 3153 TriU
+481 3737 TriU
+% End plot #7
+% Begin plot #8
+1.000 UP
+1.000 UL
+LTb
+0.31 0.17 0.61 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 3657 M
+(ukbench00031.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.31 0.17 0.61 C 353 3657 M
+255 0 V
+390 3153 M
+214 0 V
+214 0 V
+214 326 V
+213 0 V
+214 -326 V
+214 -327 V
+214 653 V
+214 -326 V
+214 0 V
+213 -327 V
+214 653 V
+214 -326 V
+214 0 V
+214 326 V
+214 -326 V
+213 326 V
+214 -326 V
+214 -653 V
+214 653 V
+214 -327 V
+214 327 V
+213 326 V
+214 -326 V
+214 326 V
+214 -979 V
+214 653 V
+214 0 V
+213 -327 V
+214 327 V
+214 326 V
+214 -326 V
+390 3153 TriUF
+604 3153 TriUF
+818 3153 TriUF
+1032 3479 TriUF
+1245 3479 TriUF
+1459 3153 TriUF
+1673 2826 TriUF
+1887 3479 TriUF
+2101 3153 TriUF
+2315 3153 TriUF
+2528 2826 TriUF
+2742 3479 TriUF
+2956 3153 TriUF
+3170 3153 TriUF
+3384 3479 TriUF
+3598 3153 TriUF
+3811 3479 TriUF
+4025 3153 TriUF
+4239 2500 TriUF
+4453 3153 TriUF
+4667 2826 TriUF
+4881 3153 TriUF
+5094 3479 TriUF
+5308 3153 TriUF
+5522 3479 TriUF
+5736 2500 TriUF
+5950 3153 TriUF
+6164 3153 TriUF
+6377 2826 TriUF
+6591 3153 TriUF
+6805 3479 TriUF
+7019 3153 TriUF
+481 3657 TriUF
+% End plot #8
+% Begin plot #9
+1.000 UP
+1.000 UL
+LTb
+0.24 0.09 0.88 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+1424 3577 M
+(ukbench00032.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.24 0.09 0.88 C 353 3577 M
+255 0 V
+390 3153 M
+214 0 V
+214 0 V
+214 -653 V
+213 979 V
+214 -979 V
+214 0 V
+214 653 V
+214 0 V
+214 -653 V
+213 0 V
+214 979 V
+214 -326 V
+214 -327 V
+214 327 V
+214 -653 V
+213 979 V
+214 -979 V
+214 653 V
+214 -653 V
+214 0 V
+214 0 V
+213 979 V
+214 -326 V
+214 -327 V
+214 327 V
+214 -653 V
+214 0 V
+213 653 V
+214 0 V
+214 0 V
+214 -653 V
+390 3153 TriD
+604 3153 TriD
+818 3153 TriD
+1032 2500 TriD
+1245 3479 TriD
+1459 2500 TriD
+1673 2500 TriD
+1887 3153 TriD
+2101 3153 TriD
+2315 2500 TriD
+2528 2500 TriD
+2742 3479 TriD
+2956 3153 TriD
+3170 2826 TriD
+3384 3153 TriD
+3598 2500 TriD
+3811 3479 TriD
+4025 2500 TriD
+4239 3153 TriD
+4453 2500 TriD
+4667 2500 TriD
+4881 2500 TriD
+5094 3479 TriD
+5308 3153 TriD
+5522 2826 TriD
+5736 3153 TriD
+5950 2500 TriD
+6164 2500 TriD
+6377 3153 TriD
+6591 3153 TriD
+6805 3153 TriD
+7019 2500 TriD
+481 3577 TriD
+% End plot #9
+% Begin plot #10
+1.000 UP
+1.000 UL
+LTb
+0.31 0.39 0.78 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 4217 M
+(ukbench00037.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.31 0.39 0.78 C 1472 4217 M
+255 0 V
+390 2826 M
+604 2500 L
+214 0 V
+214 0 V
+213 979 V
+214 -979 V
+214 0 V
+214 0 V
+214 326 V
+214 -326 V
+213 326 V
+214 653 V
+214 -979 V
+214 326 V
+214 0 V
+214 -326 V
+213 979 V
+214 -653 V
+214 0 V
+214 0 V
+214 -326 V
+214 326 V
+213 0 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 653 V
+214 -653 V
+390 2826 TriDF
+604 2500 TriDF
+818 2500 TriDF
+1032 2500 TriDF
+1245 3479 TriDF
+1459 2500 TriDF
+1673 2500 TriDF
+1887 2500 TriDF
+2101 2826 TriDF
+2315 2500 TriDF
+2528 2826 TriDF
+2742 3479 TriDF
+2956 2500 TriDF
+3170 2826 TriDF
+3384 2826 TriDF
+3598 2500 TriDF
+3811 3479 TriDF
+4025 2826 TriDF
+4239 2826 TriDF
+4453 2826 TriDF
+4667 2500 TriDF
+4881 2826 TriDF
+5094 2826 TriDF
+5308 2500 TriDF
+5522 2500 TriDF
+5736 2500 TriDF
+5950 2500 TriDF
+6164 2500 TriDF
+6377 2826 TriDF
+6591 2500 TriDF
+6805 3153 TriDF
+7019 2500 TriDF
+1600 4217 TriDF
+% End plot #10
+% Begin plot #11
+1.000 UP
+1.000 UL
+LTb
+0.29 0.83 0.44 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 4137 M
+(ukbench00042.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.29 0.83 0.44 C 1472 4137 M
+255 0 V
+390 3153 M
+214 0 V
+214 0 V
+214 -327 V
+213 653 V
+214 -653 V
+214 0 V
+214 -326 V
+214 326 V
+214 -326 V
+213 0 V
+214 979 V
+214 -979 V
+214 326 V
+214 327 V
+214 -653 V
+213 979 V
+214 -979 V
+214 0 V
+214 326 V
+214 -326 V
+214 326 V
+213 327 V
+214 -327 V
+214 327 V
+214 -327 V
+214 327 V
+214 -653 V
+213 0 V
+214 326 V
+214 653 V
+214 -326 V
+390 3153 Dia
+604 3153 Dia
+818 3153 Dia
+1032 2826 Dia
+1245 3479 Dia
+1459 2826 Dia
+1673 2826 Dia
+1887 2500 Dia
+2101 2826 Dia
+2315 2500 Dia
+2528 2500 Dia
+2742 3479 Dia
+2956 2500 Dia
+3170 2826 Dia
+3384 3153 Dia
+3598 2500 Dia
+3811 3479 Dia
+4025 2500 Dia
+4239 2500 Dia
+4453 2826 Dia
+4667 2500 Dia
+4881 2826 Dia
+5094 3153 Dia
+5308 2826 Dia
+5522 3153 Dia
+5736 2826 Dia
+5950 3153 Dia
+6164 2500 Dia
+6377 2500 Dia
+6591 2826 Dia
+6805 3479 Dia
+7019 3153 Dia
+1600 4137 Dia
+% End plot #11
+% Begin plot #12
+1.000 UP
+1.000 UL
+LTb
+0.11 0.26 0.66 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 4057 M
+(ukbench00046.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.11 0.26 0.66 C 1472 4057 M
+255 0 V
+390 3479 M
+604 3153 L
+818 2826 L
+214 653 V
+213 0 V
+214 -653 V
+214 327 V
+214 -327 V
+214 327 V
+214 -653 V
+213 653 V
+214 326 V
+214 -653 V
+214 653 V
+214 -326 V
+214 -653 V
+213 979 V
+214 -979 V
+214 979 V
+214 -326 V
+214 0 V
+214 326 V
+213 -326 V
+214 -653 V
+214 979 V
+214 -979 V
+214 653 V
+214 -653 V
+213 979 V
+214 -979 V
+214 979 V
+214 -653 V
+390 3479 DiaF
+604 3153 DiaF
+818 2826 DiaF
+1032 3479 DiaF
+1245 3479 DiaF
+1459 2826 DiaF
+1673 3153 DiaF
+1887 2826 DiaF
+2101 3153 DiaF
+2315 2500 DiaF
+2528 3153 DiaF
+2742 3479 DiaF
+2956 2826 DiaF
+3170 3479 DiaF
+3384 3153 DiaF
+3598 2500 DiaF
+3811 3479 DiaF
+4025 2500 DiaF
+4239 3479 DiaF
+4453 3153 DiaF
+4667 3153 DiaF
+4881 3479 DiaF
+5094 3153 DiaF
+5308 2500 DiaF
+5522 3479 DiaF
+5736 2500 DiaF
+5950 3153 DiaF
+6164 2500 DiaF
+6377 3479 DiaF
+6591 2500 DiaF
+6805 3479 DiaF
+7019 2826 DiaF
+1600 4057 DiaF
+% End plot #12
+% Begin plot #13
+1.000 UP
+1.000 UL
+LTb
+0.12 0.51 0.46 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 3977 M
+(ukbench00049.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.12 0.51 0.46 C 1472 3977 M
+255 0 V
+390 3153 M
+214 0 V
+214 0 V
+214 -653 V
+213 979 V
+214 -653 V
+214 0 V
+214 -326 V
+214 653 V
+214 0 V
+213 326 V
+214 0 V
+214 -979 V
+214 979 V
+214 -326 V
+214 -653 V
+213 979 V
+214 -326 V
+214 0 V
+214 0 V
+214 -327 V
+214 653 V
+213 -326 V
+214 326 V
+214 -979 V
+214 653 V
+214 0 V
+214 0 V
+213 0 V
+214 326 V
+214 0 V
+214 -326 V
+390 3153 Pent
+604 3153 Pent
+818 3153 Pent
+1032 2500 Pent
+1245 3479 Pent
+1459 2826 Pent
+1673 2826 Pent
+1887 2500 Pent
+2101 3153 Pent
+2315 3153 Pent
+2528 3479 Pent
+2742 3479 Pent
+2956 2500 Pent
+3170 3479 Pent
+3384 3153 Pent
+3598 2500 Pent
+3811 3479 Pent
+4025 3153 Pent
+4239 3153 Pent
+4453 3153 Pent
+4667 2826 Pent
+4881 3479 Pent
+5094 3153 Pent
+5308 3479 Pent
+5522 2500 Pent
+5736 3153 Pent
+5950 3153 Pent
+6164 3153 Pent
+6377 3153 Pent
+6591 3479 Pent
+6805 3479 Pent
+7019 3153 Pent
+1600 3977 Pent
+% End plot #13
+% Begin plot #14
+1.000 UP
+1.000 UL
+LTb
+0.88 0.22 0.30 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 3897 M
+(ukbench00053.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.88 0.22 0.30 C 1472 3897 M
+255 0 V
+390 2500 M
+214 653 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 -327 V
+214 -326 V
+214 0 V
+214 0 V
+213 653 V
+214 326 V
+214 -979 V
+214 326 V
+214 -326 V
+214 0 V
+213 979 V
+214 -979 V
+214 0 V
+214 979 V
+214 -326 V
+214 -653 V
+213 0 V
+214 653 V
+214 0 V
+214 -653 V
+214 326 V
+214 -326 V
+213 0 V
+214 653 V
+214 326 V
+214 -653 V
+390 2500 PentF
+604 3153 PentF
+818 3153 PentF
+1032 3153 PentF
+1245 3479 PentF
+1459 3153 PentF
+1673 2826 PentF
+1887 2500 PentF
+2101 2500 PentF
+2315 2500 PentF
+2528 3153 PentF
+2742 3479 PentF
+2956 2500 PentF
+3170 2826 PentF
+3384 2500 PentF
+3598 2500 PentF
+3811 3479 PentF
+4025 2500 PentF
+4239 2500 PentF
+4453 3479 PentF
+4667 3153 PentF
+4881 2500 PentF
+5094 2500 PentF
+5308 3153 PentF
+5522 3153 PentF
+5736 2500 PentF
+5950 2826 PentF
+6164 2500 PentF
+6377 2500 PentF
+6591 3153 PentF
+6805 3479 PentF
+7019 2826 PentF
+1600 3897 PentF
+% End plot #14
+% Begin plot #15
+1.000 UP
+1.000 UL
+LTb
+0.20 0.69 0.07 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 3817 M
+(ukbench00058.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.20 0.69 0.07 C 1472 3817 M
+255 0 V
+390 3153 M
+604 2500 L
+214 326 V
+214 -326 V
+213 979 V
+214 -979 V
+214 0 V
+214 653 V
+214 0 V
+214 0 V
+213 -327 V
+214 653 V
+214 -326 V
+214 -653 V
+214 653 V
+214 -327 V
+213 653 V
+214 -979 V
+214 0 V
+214 653 V
+214 -327 V
+214 -326 V
+213 653 V
+214 -327 V
+214 -326 V
+214 326 V
+214 327 V
+214 0 V
+213 -653 V
+214 326 V
+214 653 V
+214 -326 V
+390 3153 C0
+604 2500 C0
+818 2826 C0
+1032 2500 C0
+1245 3479 C0
+1459 2500 C0
+1673 2500 C0
+1887 3153 C0
+2101 3153 C0
+2315 3153 C0
+2528 2826 C0
+2742 3479 C0
+2956 3153 C0
+3170 2500 C0
+3384 3153 C0
+3598 2826 C0
+3811 3479 C0
+4025 2500 C0
+4239 2500 C0
+4453 3153 C0
+4667 2826 C0
+4881 2500 C0
+5094 3153 C0
+5308 2826 C0
+5522 2500 C0
+5736 2826 C0
+5950 3153 C0
+6164 3153 C0
+6377 2500 C0
+6591 2826 C0
+6805 3479 C0
+7019 3153 C0
+1600 3817 C0
+% End plot #15
+% Begin plot #16
+1.000 UP
+1.000 UL
+LTb
+0.67 0.11 0.31 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 3737 M
+(ukbench00061.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.67 0.11 0.31 C 1472 3737 M
+255 0 V
+390 2826 M
+214 0 V
+214 0 V
+214 327 V
+213 326 V
+214 -653 V
+214 0 V
+214 653 V
+214 -653 V
+214 327 V
+213 -327 V
+214 653 V
+214 0 V
+214 -326 V
+214 0 V
+214 -653 V
+213 979 V
+214 -653 V
+214 653 V
+214 -653 V
+214 -326 V
+214 653 V
+213 0 V
+214 -653 V
+214 653 V
+214 -653 V
+214 979 V
+214 0 V
+213 0 V
+214 -979 V
+214 979 V
+214 0 V
+390 2826 C1
+604 2826 C1
+818 2826 C1
+1032 3153 C1
+1245 3479 C1
+1459 2826 C1
+1673 2826 C1
+1887 3479 C1
+2101 2826 C1
+2315 3153 C1
+2528 2826 C1
+2742 3479 C1
+2956 3479 C1
+3170 3153 C1
+3384 3153 C1
+3598 2500 C1
+3811 3479 C1
+4025 2826 C1
+4239 3479 C1
+4453 2826 C1
+4667 2500 C1
+4881 3153 C1
+5094 3153 C1
+5308 2500 C1
+5522 3153 C1
+5736 2500 C1
+5950 3479 C1
+6164 3479 C1
+6377 3479 C1
+6591 2500 C1
+6805 3479 C1
+7019 3479 C1
+1600 3737 C1
+% End plot #16
+% Begin plot #17
+1.000 UP
+1.000 UL
+LTb
+0.63 0.02 0.92 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 3657 M
+(ukbench00066.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.63 0.02 0.92 C 1472 3657 M
+255 0 V
+390 2826 M
+214 0 V
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 0 V
+214 653 V
+214 -653 V
+214 0 V
+214 327 V
+214 -653 V
+213 979 V
+214 -653 V
+214 0 V
+214 0 V
+214 -326 V
+214 326 V
+213 327 V
+214 -327 V
+214 0 V
+214 -326 V
+214 0 V
+214 326 V
+213 0 V
+214 0 V
+214 653 V
+214 -979 V
+390 2826 C2
+604 2826 C2
+818 2826 C2
+1032 2826 C2
+1245 3479 C2
+1459 2826 C2
+1673 2826 C2
+1887 2826 C2
+2101 2826 C2
+2315 2826 C2
+2528 2826 C2
+2742 3479 C2
+2956 2826 C2
+3170 2826 C2
+3384 3153 C2
+3598 2500 C2
+3811 3479 C2
+4025 2826 C2
+4239 2826 C2
+4453 2826 C2
+4667 2500 C2
+4881 2826 C2
+5094 3153 C2
+5308 2826 C2
+5522 2826 C2
+5736 2500 C2
+5950 2500 C2
+6164 2826 C2
+6377 2826 C2
+6591 2826 C2
+6805 3479 C2
+7019 2500 C2
+1600 3657 C2
+% End plot #17
+% Begin plot #18
+1.000 UP
+1.000 UL
+LTb
+0.80 0.97 0.13 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2543 3577 M
+(ukbench00071.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.80 0.97 0.13 C 1472 3577 M
+255 0 V
+390 2500 M
+214 653 V
+214 0 V
+214 -653 V
+213 979 V
+214 -979 V
+214 0 V
+214 0 V
+214 0 V
+214 326 V
+213 0 V
+214 653 V
+214 -979 V
+214 0 V
+214 326 V
+214 -326 V
+213 979 V
+214 -979 V
+214 0 V
+214 326 V
+214 0 V
+214 -326 V
+213 326 V
+214 327 V
+214 -653 V
+214 326 V
+214 -326 V
+214 326 V
+213 -326 V
+214 653 V
+214 326 V
+214 -979 V
+390 2500 C3
+604 3153 C3
+818 3153 C3
+1032 2500 C3
+1245 3479 C3
+1459 2500 C3
+1673 2500 C3
+1887 2500 C3
+2101 2500 C3
+2315 2826 C3
+2528 2826 C3
+2742 3479 C3
+2956 2500 C3
+3170 2500 C3
+3384 2826 C3
+3598 2500 C3
+3811 3479 C3
+4025 2500 C3
+4239 2500 C3
+4453 2826 C3
+4667 2826 C3
+4881 2500 C3
+5094 2826 C3
+5308 3153 C3
+5522 2500 C3
+5736 2826 C3
+5950 2500 C3
+6164 2826 C3
+6377 2500 C3
+6591 3153 C3
+6805 3479 C3
+7019 2500 C3
+1600 3577 C3
+% End plot #18
+% Begin plot #19
+1.000 UP
+1.000 UL
+LTb
+0.85 0.92 0.04 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 4217 M
+(ukbench00075.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.85 0.92 0.04 C 2591 4217 M
+255 0 V
+390 2826 M
+604 2500 L
+214 0 V
+214 326 V
+213 327 V
+214 0 V
+214 0 V
+214 -653 V
+214 653 V
+214 -653 V
+213 0 V
+214 979 V
+214 -979 V
+214 0 V
+214 653 V
+214 -653 V
+213 979 V
+214 -653 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 326 V
+214 -326 V
+214 326 V
+214 -326 V
+213 0 V
+214 0 V
+214 326 V
+214 0 V
+390 2826 C4
+604 2500 C4
+818 2500 C4
+1032 2826 C4
+1245 3153 C4
+1459 3153 C4
+1673 3153 C4
+1887 2500 C4
+2101 3153 C4
+2315 2500 C4
+2528 2500 C4
+2742 3479 C4
+2956 2500 C4
+3170 2500 C4
+3384 3153 C4
+3598 2500 C4
+3811 3479 C4
+4025 2826 C4
+4239 2500 C4
+4453 2500 C4
+4667 2500 C4
+4881 2500 C4
+5094 2826 C4
+5308 2500 C4
+5522 2826 C4
+5736 2500 C4
+5950 2826 C4
+6164 2500 C4
+6377 2500 C4
+6591 2500 C4
+6805 2826 C4
+7019 2826 C4
+2719 4217 C4
+% End plot #19
+% Begin plot #20
+1.000 UP
+1.000 UL
+LTb
+0.26 0.21 0.87 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 4137 M
+(ukbench00076.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.26 0.21 0.87 C 2591 4137 M
+255 0 V
+390 3479 M
+604 3153 L
+214 326 V
+214 0 V
+213 0 V
+214 -326 V
+214 326 V
+214 0 V
+214 0 V
+214 -326 V
+213 326 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+214 -979 V
+213 979 V
+214 -979 V
+214 979 V
+214 0 V
+214 -653 V
+214 653 V
+213 0 V
+214 -326 V
+214 326 V
+214 0 V
+214 0 V
+214 -326 V
+213 326 V
+214 -326 V
+214 326 V
+214 0 V
+390 3479 C5
+604 3153 C5
+818 3479 C5
+1032 3479 C5
+1245 3479 C5
+1459 3153 C5
+1673 3479 C5
+1887 3479 C5
+2101 3479 C5
+2315 3153 C5
+2528 3479 C5
+2742 3479 C5
+2956 3479 C5
+3170 3479 C5
+3384 3479 C5
+3598 2500 C5
+3811 3479 C5
+4025 2500 C5
+4239 3479 C5
+4453 3479 C5
+4667 2826 C5
+4881 3479 C5
+5094 3479 C5
+5308 3153 C5
+5522 3479 C5
+5736 3479 C5
+5950 3479 C5
+6164 3153 C5
+6377 3479 C5
+6591 3153 C5
+6805 3479 C5
+7019 3479 C5
+2719 4137 C5
+% End plot #20
+% Begin plot #21
+1.000 UP
+1.000 UL
+LTb
+0.41 0.12 0.63 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 4057 M
+(ukbench00081.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.41 0.12 0.63 C 2591 4057 M
+255 0 V
+390 3153 M
+604 2500 L
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 653 V
+214 -327 V
+213 0 V
+214 327 V
+214 -653 V
+214 326 V
+214 327 V
+214 -653 V
+213 653 V
+214 0 V
+214 -327 V
+214 0 V
+214 -326 V
+214 326 V
+213 327 V
+214 -327 V
+214 -326 V
+214 0 V
+214 0 V
+214 326 V
+213 0 V
+214 0 V
+214 327 V
+214 -327 V
+390 3153 C6
+604 2500 C6
+818 2500 C6
+1032 2500 C6
+1245 3153 C6
+1459 2500 C6
+1673 2500 C6
+1887 2500 C6
+2101 3153 C6
+2315 2826 C6
+2528 2826 C6
+2742 3153 C6
+2956 2500 C6
+3170 2826 C6
+3384 3153 C6
+3598 2500 C6
+3811 3153 C6
+4025 3153 C6
+4239 2826 C6
+4453 2826 C6
+4667 2500 C6
+4881 2826 C6
+5094 3153 C6
+5308 2826 C6
+5522 2500 C6
+5736 2500 C6
+5950 2500 C6
+6164 2826 C6
+6377 2826 C6
+6591 2826 C6
+6805 3153 C6
+7019 2826 C6
+2719 4057 C6
+% End plot #21
+% Begin plot #22
+1.000 UP
+1.000 UL
+LTb
+0.68 0.04 0.74 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 3977 M
+(ukbench00084.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.68 0.04 0.74 C 2591 3977 M
+255 0 V
+390 3479 M
+604 2826 L
+214 0 V
+214 327 V
+213 326 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 -326 V
+214 326 V
+214 0 V
+214 0 V
+214 0 V
+214 -326 V
+213 326 V
+214 -653 V
+214 653 V
+214 -326 V
+214 -653 V
+214 979 V
+213 0 V
+214 -653 V
+214 653 V
+214 -979 V
+214 653 V
+214 326 V
+213 0 V
+214 -653 V
+214 653 V
+214 0 V
+390 3479 C7
+604 2826 C7
+818 2826 C7
+1032 3153 C7
+1245 3479 C7
+1459 3479 C7
+1673 3479 C7
+1887 3479 C7
+2101 3479 C7
+2315 3479 C7
+2528 3153 C7
+2742 3479 C7
+2956 3479 C7
+3170 3479 C7
+3384 3479 C7
+3598 3153 C7
+3811 3479 C7
+4025 2826 C7
+4239 3479 C7
+4453 3153 C7
+4667 2500 C7
+4881 3479 C7
+5094 3479 C7
+5308 2826 C7
+5522 3479 C7
+5736 2500 C7
+5950 3153 C7
+6164 3479 C7
+6377 3479 C7
+6591 2826 C7
+6805 3479 C7
+7019 3479 C7
+2719 3977 C7
+% End plot #22
+% Begin plot #23
+1.000 UP
+1.000 UL
+LTb
+0.85 0.38 0.32 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 3897 M
+(ukbench00091.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.85 0.38 0.32 C 2591 3897 M
+255 0 V
+390 3153 M
+214 326 V
+214 0 V
+214 -979 V
+213 979 V
+214 -979 V
+214 0 V
+214 979 V
+214 -326 V
+214 326 V
+213 -979 V
+214 979 V
+214 0 V
+214 -979 V
+214 653 V
+214 -653 V
+213 979 V
+214 -979 V
+214 0 V
+214 0 V
+214 326 V
+214 -326 V
+213 653 V
+214 -327 V
+214 -326 V
+214 326 V
+214 -326 V
+214 979 V
+213 -979 V
+214 326 V
+214 653 V
+214 -979 V
+390 3153 C8
+604 3479 C8
+818 3479 C8
+1032 2500 C8
+1245 3479 C8
+1459 2500 C8
+1673 2500 C8
+1887 3479 C8
+2101 3153 C8
+2315 3479 C8
+2528 2500 C8
+2742 3479 C8
+2956 3479 C8
+3170 2500 C8
+3384 3153 C8
+3598 2500 C8
+3811 3479 C8
+4025 2500 C8
+4239 2500 C8
+4453 2500 C8
+4667 2826 C8
+4881 2500 C8
+5094 3153 C8
+5308 2826 C8
+5522 2500 C8
+5736 2826 C8
+5950 2500 C8
+6164 3479 C8
+6377 2500 C8
+6591 2826 C8
+6805 3479 C8
+7019 2500 C8
+2719 3897 C8
+% End plot #23
+% Begin plot #24
+1.000 UP
+1.000 UL
+LTb
+0.47 0.46 0.13 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 3817 M
+(ukbench00092.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.47 0.46 0.13 C 2591 3817 M
+255 0 V
+390 3479 M
+604 3153 L
+214 0 V
+214 326 V
+213 0 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+214 -327 V
+213 327 V
+214 326 V
+214 -326 V
+214 -653 V
+214 979 V
+214 -653 V
+213 653 V
+214 -979 V
+214 0 V
+214 653 V
+214 -653 V
+214 0 V
+213 979 V
+214 -326 V
+214 326 V
+214 -653 V
+214 327 V
+214 0 V
+213 -653 V
+214 653 V
+214 326 V
+214 -326 V
+390 3479 C9
+604 3153 C9
+818 3153 C9
+1032 3479 C9
+1245 3479 C9
+1459 3153 C9
+1673 3153 C9
+1887 3153 C9
+2101 3153 C9
+2315 2826 C9
+2528 3153 C9
+2742 3479 C9
+2956 3153 C9
+3170 2500 C9
+3384 3479 C9
+3598 2826 C9
+3811 3479 C9
+4025 2500 C9
+4239 2500 C9
+4453 3153 C9
+4667 2500 C9
+4881 2500 C9
+5094 3479 C9
+5308 3153 C9
+5522 3479 C9
+5736 2826 C9
+5950 3153 C9
+6164 3153 C9
+6377 2500 C9
+6591 3153 C9
+6805 3479 C9
+7019 3153 C9
+2719 3817 C9
+% End plot #24
+% Begin plot #25
+1.000 UP
+1.000 UL
+LTb
+0.29 0.04 0.61 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 3737 M
+(ukbench00099.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.29 0.04 0.61 C 2591 3737 M
+255 0 V
+390 3153 M
+604 2500 L
+214 0 V
+214 979 V
+213 0 V
+214 -653 V
+214 327 V
+214 326 V
+214 -653 V
+214 0 V
+213 -326 V
+214 979 V
+214 0 V
+214 -326 V
+214 0 V
+214 -653 V
+213 979 V
+214 -653 V
+214 327 V
+214 -653 V
+214 0 V
+214 979 V
+213 -326 V
+214 0 V
+214 0 V
+214 -653 V
+214 0 V
+214 326 V
+213 327 V
+214 0 V
+214 326 V
+214 -979 V
+390 3153 C10
+604 2500 C10
+818 2500 C10
+1032 3479 C10
+1245 3479 C10
+1459 2826 C10
+1673 3153 C10
+1887 3479 C10
+2101 2826 C10
+2315 2826 C10
+2528 2500 C10
+2742 3479 C10
+2956 3479 C10
+3170 3153 C10
+3384 3153 C10
+3598 2500 C10
+3811 3479 C10
+4025 2826 C10
+4239 3153 C10
+4453 2500 C10
+4667 2500 C10
+4881 3479 C10
+5094 3153 C10
+5308 3153 C10
+5522 3153 C10
+5736 2500 C10
+5950 2500 C10
+6164 2826 C10
+6377 3153 C10
+6591 3153 C10
+6805 3479 C10
+7019 2500 C10
+2719 3737 C10
+% End plot #25
+% Begin plot #26
+1.000 UP
+1.000 UL
+LTb
+0.02 0.33 0.62 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 3657 M
+(ukbench00102.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.02 0.33 0.62 C 2591 3657 M
+255 0 V
+390 2826 M
+214 327 V
+214 0 V
+214 -327 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 -326 V
+214 979 V
+214 -653 V
+214 327 V
+214 0 V
+214 -653 V
+213 979 V
+214 -979 V
+214 0 V
+214 0 V
+214 0 V
+214 653 V
+213 -327 V
+214 327 V
+214 -327 V
+214 327 V
+214 -327 V
+214 -326 V
+213 0 V
+214 653 V
+214 0 V
+214 -653 V
+390 2826 C11
+604 3153 C11
+818 3153 C11
+1032 2826 C11
+1245 3479 C11
+1459 2826 C11
+1673 2826 C11
+1887 2826 C11
+2101 2826 C11
+2315 2826 C11
+2528 2500 C11
+2742 3479 C11
+2956 2826 C11
+3170 3153 C11
+3384 3153 C11
+3598 2500 C11
+3811 3479 C11
+4025 2500 C11
+4239 2500 C11
+4453 2500 C11
+4667 2500 C11
+4881 3153 C11
+5094 2826 C11
+5308 3153 C11
+5522 2826 C11
+5736 3153 C11
+5950 2826 C11
+6164 2500 C11
+6377 2500 C11
+6591 3153 C11
+6805 3153 C11
+7019 2500 C11
+2719 3657 C11
+% End plot #26
+% Begin plot #27
+1.000 UP
+1.000 UL
+LTb
+0.07 0.55 0.69 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+3662 3577 M
+(ukbench00106.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.07 0.55 0.69 C 2591 3577 M
+255 0 V
+390 2500 M
+214 653 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 0 V
+214 326 V
+214 -979 V
+214 653 V
+213 0 V
+214 326 V
+214 0 V
+214 -326 V
+214 -327 V
+214 -326 V
+213 979 V
+214 -979 V
+214 326 V
+214 327 V
+214 -653 V
+214 653 V
+213 -327 V
+214 0 V
+214 327 V
+214 -653 V
+214 653 V
+214 0 V
+213 -327 V
+214 327 V
+214 326 V
+214 -326 V
+390 2500 C12
+604 3153 C12
+818 3153 C12
+1032 3153 C12
+1245 3479 C12
+1459 3153 C12
+1673 3153 C12
+1887 3479 C12
+2101 2500 C12
+2315 3153 C12
+2528 3153 C12
+2742 3479 C12
+2956 3479 C12
+3170 3153 C12
+3384 2826 C12
+3598 2500 C12
+3811 3479 C12
+4025 2500 C12
+4239 2826 C12
+4453 3153 C12
+4667 2500 C12
+4881 3153 C12
+5094 2826 C12
+5308 2826 C12
+5522 3153 C12
+5736 2500 C12
+5950 3153 C12
+6164 3153 C12
+6377 2826 C12
+6591 3153 C12
+6805 3479 C12
+7019 3153 C12
+2719 3577 C12
+% End plot #27
+% Begin plot #28
+1.000 UP
+1.000 UL
+LTb
+0.09 0.60 0.67 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 4217 M
+(ukbench00108.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.09 0.60 0.67 C 3710 4217 M
+255 0 V
+390 3153 M
+604 2826 L
+214 0 V
+214 327 V
+213 326 V
+214 -326 V
+214 326 V
+214 -653 V
+214 327 V
+214 -327 V
+213 0 V
+214 653 V
+214 -653 V
+214 327 V
+214 0 V
+214 -327 V
+213 653 V
+214 -979 V
+214 979 V
+214 -326 V
+214 -653 V
+214 653 V
+213 0 V
+214 -653 V
+214 653 V
+214 -327 V
+214 327 V
+214 -327 V
+213 327 V
+214 -653 V
+214 979 V
+214 -326 V
+390 3153 C13
+604 2826 C13
+818 2826 C13
+1032 3153 C13
+1245 3479 C13
+1459 3153 C13
+1673 3479 C13
+1887 2826 C13
+2101 3153 C13
+2315 2826 C13
+2528 2826 C13
+2742 3479 C13
+2956 2826 C13
+3170 3153 C13
+3384 3153 C13
+3598 2826 C13
+3811 3479 C13
+4025 2500 C13
+4239 3479 C13
+4453 3153 C13
+4667 2500 C13
+4881 3153 C13
+5094 3153 C13
+5308 2500 C13
+5522 3153 C13
+5736 2826 C13
+5950 3153 C13
+6164 2826 C13
+6377 3153 C13
+6591 2500 C13
+6805 3479 C13
+7019 3153 C13
+3838 4217 C13
+% End plot #28
+% Begin plot #29
+1.000 UP
+1.000 UL
+LTb
+0.67 0.08 0.36 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 4137 M
+(ukbench00112.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.67 0.08 0.36 C 3710 4137 M
+255 0 V
+390 2826 M
+214 0 V
+214 327 V
+214 -653 V
+213 653 V
+214 -327 V
+214 0 V
+214 -326 V
+214 326 V
+214 0 V
+213 -326 V
+214 653 V
+214 -327 V
+214 0 V
+214 0 V
+214 0 V
+213 327 V
+214 -653 V
+214 326 V
+214 -326 V
+214 326 V
+214 327 V
+213 -327 V
+214 327 V
+214 -653 V
+214 326 V
+214 -326 V
+214 326 V
+213 0 V
+214 327 V
+214 326 V
+214 -979 V
+390 2826 C14
+604 2826 C14
+818 3153 C14
+1032 2500 C14
+1245 3153 C14
+1459 2826 C14
+1673 2826 C14
+1887 2500 C14
+2101 2826 C14
+2315 2826 C14
+2528 2500 C14
+2742 3153 C14
+2956 2826 C14
+3170 2826 C14
+3384 2826 C14
+3598 2826 C14
+3811 3153 C14
+4025 2500 C14
+4239 2826 C14
+4453 2500 C14
+4667 2826 C14
+4881 3153 C14
+5094 2826 C14
+5308 3153 C14
+5522 2500 C14
+5736 2826 C14
+5950 2500 C14
+6164 2826 C14
+6377 2826 C14
+6591 3153 C14
+6805 3479 C14
+7019 2500 C14
+3838 4137 C14
+% End plot #29
+% Begin plot #30
+1.000 UP
+1.000 UL
+LTb
+0.15 0.87 0.09 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 4057 M
+(ukbench00118.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.15 0.87 0.09 C 3710 4057 M
+255 0 V
+390 2500 M
+214 0 V
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 0 V
+214 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 0 V
+214 0 V
+214 0 V
+214 326 V
+214 -326 V
+214 0 V
+213 0 V
+214 0 V
+214 326 V
+214 -326 V
+390 2500 C15
+604 2500 C15
+818 2500 C15
+1032 2500 C15
+1245 3153 C15
+1459 2500 C15
+1673 2500 C15
+1887 2500 C15
+2101 2500 C15
+2315 2500 C15
+2528 2500 C15
+2742 3153 C15
+2956 2500 C15
+3170 2500 C15
+3384 2500 C15
+3598 2500 C15
+3811 2826 C15
+4025 2500 C15
+4239 2500 C15
+4453 2500 C15
+4667 2500 C15
+4881 2500 C15
+5094 2500 C15
+5308 2500 C15
+5522 2500 C15
+5736 2826 C15
+5950 2500 C15
+6164 2500 C15
+6377 2500 C15
+6591 2500 C15
+6805 2826 C15
+7019 2500 C15
+3838 4057 C15
+% End plot #30
+% Begin plot #31
+1.000 UP
+1.000 UL
+LTb
+0.08 0.98 0.44 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 3977 M
+(ukbench00121.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.08 0.98 0.44 C 3710 3977 M
+255 0 V
+390 3153 M
+214 326 V
+214 0 V
+214 -326 V
+213 326 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 -327 V
+214 653 V
+214 -326 V
+214 326 V
+214 -326 V
+214 -653 V
+213 979 V
+214 -979 V
+214 979 V
+214 -979 V
+214 0 V
+214 979 V
+213 -326 V
+214 0 V
+214 0 V
+214 -327 V
+214 653 V
+214 -326 V
+213 326 V
+214 -326 V
+214 326 V
+214 -326 V
+390 3153 S0
+604 3479 S0
+818 3479 S0
+1032 3153 S0
+1245 3479 S0
+1459 3153 S0
+1673 3153 S0
+1887 3153 S0
+2101 3153 S0
+2315 3153 S0
+2528 2826 S0
+2742 3479 S0
+2956 3153 S0
+3170 3479 S0
+3384 3153 S0
+3598 2500 S0
+3811 3479 S0
+4025 2500 S0
+4239 3479 S0
+4453 2500 S0
+4667 2500 S0
+4881 3479 S0
+5094 3153 S0
+5308 3153 S0
+5522 3153 S0
+5736 2826 S0
+5950 3479 S0
+6164 3153 S0
+6377 3479 S0
+6591 3153 S0
+6805 3479 S0
+7019 3153 S0
+3838 3977 S0
+% End plot #31
+% Begin plot #32
+1.000 UP
+1.000 UL
+LTb
+0.10 0.61 0.43 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 3897 M
+(ukbench00125.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.10 0.61 0.43 C 3710 3897 M
+255 0 V
+390 3479 M
+604 3153 L
+214 0 V
+214 326 V
+213 0 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 0 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+214 -979 V
+213 979 V
+214 -653 V
+214 653 V
+214 0 V
+214 0 V
+214 0 V
+213 0 V
+214 -326 V
+214 326 V
+214 -326 V
+214 326 V
+214 0 V
+213 0 V
+214 -326 V
+214 326 V
+214 0 V
+390 3479 S1
+604 3153 S1
+818 3153 S1
+1032 3479 S1
+1245 3479 S1
+1459 3479 S1
+1673 3479 S1
+1887 3479 S1
+2101 3479 S1
+2315 3479 S1
+2528 3479 S1
+2742 3479 S1
+2956 3479 S1
+3170 3479 S1
+3384 3479 S1
+3598 2500 S1
+3811 3479 S1
+4025 2826 S1
+4239 3479 S1
+4453 3479 S1
+4667 3479 S1
+4881 3479 S1
+5094 3479 S1
+5308 3153 S1
+5522 3479 S1
+5736 3153 S1
+5950 3479 S1
+6164 3479 S1
+6377 3479 S1
+6591 3153 S1
+6805 3479 S1
+7019 3479 S1
+3838 3897 S1
+% End plot #32
+% Begin plot #33
+1.000 UP
+1.000 UL
+LTb
+0.00 0.97 0.04 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 3817 M
+(ukbench00131.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.00 0.97 0.04 C 3710 3817 M
+255 0 V
+390 3479 M
+604 2826 L
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 327 V
+214 0 V
+214 326 V
+214 -653 V
+213 0 V
+214 653 V
+214 -326 V
+214 0 V
+214 0 V
+214 -327 V
+213 653 V
+214 -979 V
+214 979 V
+214 -979 V
+214 0 V
+214 653 V
+213 -327 V
+214 0 V
+214 0 V
+214 0 V
+214 327 V
+214 -327 V
+213 653 V
+214 -653 V
+214 653 V
+214 -653 V
+390 3479 S2
+604 2826 S2
+818 2826 S2
+1032 2826 S2
+1245 3479 S2
+1459 2826 S2
+1673 3153 S2
+1887 3153 S2
+2101 3479 S2
+2315 2826 S2
+2528 2826 S2
+2742 3479 S2
+2956 3153 S2
+3170 3153 S2
+3384 3153 S2
+3598 2826 S2
+3811 3479 S2
+4025 2500 S2
+4239 3479 S2
+4453 2500 S2
+4667 2500 S2
+4881 3153 S2
+5094 2826 S2
+5308 2826 S2
+5522 2826 S2
+5736 2826 S2
+5950 3153 S2
+6164 2826 S2
+6377 3479 S2
+6591 2826 S2
+6805 3479 S2
+7019 2826 S2
+3838 3817 S2
+% End plot #33
+% Begin plot #34
+1.000 UP
+1.000 UL
+LTb
+0.54 0.77 0.25 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 3737 M
+(ukbench00135.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.54 0.77 0.25 C 3710 3737 M
+255 0 V
+390 2826 M
+604 2500 L
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 0 V
+214 326 V
+214 0 V
+214 0 V
+213 0 V
+214 653 V
+214 -979 V
+214 0 V
+214 326 V
+214 -326 V
+213 979 V
+214 -653 V
+214 -326 V
+214 326 V
+214 -326 V
+214 0 V
+213 326 V
+214 -326 V
+214 0 V
+214 0 V
+214 653 V
+214 -327 V
+213 -326 V
+214 0 V
+214 979 V
+214 -326 V
+390 2826 S3
+604 2500 S3
+818 2500 S3
+1032 2500 S3
+1245 3153 S3
+1459 2500 S3
+1673 2500 S3
+1887 2826 S3
+2101 2826 S3
+2315 2826 S3
+2528 2826 S3
+2742 3479 S3
+2956 2500 S3
+3170 2500 S3
+3384 2826 S3
+3598 2500 S3
+3811 3479 S3
+4025 2826 S3
+4239 2500 S3
+4453 2826 S3
+4667 2500 S3
+4881 2500 S3
+5094 2826 S3
+5308 2500 S3
+5522 2500 S3
+5736 2500 S3
+5950 3153 S3
+6164 2826 S3
+6377 2500 S3
+6591 2500 S3
+6805 3479 S3
+7019 3153 S3
+3838 3737 S3
+% End plot #34
+% Begin plot #35
+1.000 UP
+1.000 UL
+LTb
+0.09 0.13 0.90 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 3657 M
+(ukbench00138.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.09 0.13 0.90 C 3710 3657 M
+255 0 V
+390 2500 M
+214 0 V
+214 0 V
+214 326 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 -326 V
+214 979 V
+214 -653 V
+214 -326 V
+214 0 V
+214 326 V
+213 327 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 326 V
+214 -326 V
+214 0 V
+214 326 V
+213 -326 V
+214 0 V
+214 653 V
+214 -653 V
+390 2500 S4
+604 2500 S4
+818 2500 S4
+1032 2826 S4
+1245 3479 S4
+1459 2826 S4
+1673 2826 S4
+1887 2826 S4
+2101 2826 S4
+2315 2826 S4
+2528 2500 S4
+2742 3479 S4
+2956 2826 S4
+3170 2500 S4
+3384 2500 S4
+3598 2826 S4
+3811 3153 S4
+4025 2500 S4
+4239 2500 S4
+4453 2500 S4
+4667 2500 S4
+4881 2500 S4
+5094 2826 S4
+5308 2500 S4
+5522 2826 S4
+5736 2500 S4
+5950 2500 S4
+6164 2826 S4
+6377 2500 S4
+6591 2500 S4
+6805 3153 S4
+7019 2500 S4
+3838 3657 S4
+% End plot #35
+% Begin plot #36
+1.000 UP
+1.000 UL
+LTb
+0.87 0.60 0.20 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4781 3577 M
+(ukbench00140.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.87 0.60 0.20 C 3710 3577 M
+255 0 V
+390 2500 M
+214 326 V
+214 327 V
+214 -327 V
+213 327 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 327 V
+214 -653 V
+214 0 V
+214 326 V
+214 0 V
+213 0 V
+214 -326 V
+214 326 V
+214 -326 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 326 V
+214 -326 V
+214 326 V
+214 -326 V
+213 326 V
+214 -326 V
+214 326 V
+214 -326 V
+390 2500 S5
+604 2826 S5
+818 3153 S5
+1032 2826 S5
+1245 3153 S5
+1459 2500 S5
+1673 2500 S5
+1887 2500 S5
+2101 2500 S5
+2315 2500 S5
+2528 2826 S5
+2742 3153 S5
+2956 2500 S5
+3170 2500 S5
+3384 2826 S5
+3598 2826 S5
+3811 2826 S5
+4025 2500 S5
+4239 2826 S5
+4453 2500 S5
+4667 2500 S5
+4881 2500 S5
+5094 2826 S5
+5308 2500 S5
+5522 2826 S5
+5736 2500 S5
+5950 2826 S5
+6164 2500 S5
+6377 2826 S5
+6591 2500 S5
+6805 2826 S5
+7019 2500 S5
+3838 3577 S5
+% End plot #36
+% Begin plot #37
+1.000 UP
+1.000 UL
+LTb
+0.38 0.69 0.15 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 4217 M
+(ukbench00147.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.38 0.69 0.15 C 4829 4217 M
+255 0 V
+390 3153 M
+604 2826 L
+214 0 V
+214 -326 V
+213 979 V
+214 -653 V
+214 327 V
+214 -653 V
+214 653 V
+214 -653 V
+213 0 V
+214 979 V
+214 -979 V
+214 326 V
+214 327 V
+214 0 V
+213 -327 V
+214 0 V
+214 -326 V
+214 0 V
+214 0 V
+214 326 V
+213 327 V
+214 -327 V
+214 -326 V
+214 326 V
+214 0 V
+214 -326 V
+213 326 V
+214 0 V
+214 0 V
+214 0 V
+390 3153 S6
+604 2826 S6
+818 2826 S6
+1032 2500 S6
+1245 3479 S6
+1459 2826 S6
+1673 3153 S6
+1887 2500 S6
+2101 3153 S6
+2315 2500 S6
+2528 2500 S6
+2742 3479 S6
+2956 2500 S6
+3170 2826 S6
+3384 3153 S6
+3598 3153 S6
+3811 2826 S6
+4025 2826 S6
+4239 2500 S6
+4453 2500 S6
+4667 2500 S6
+4881 2826 S6
+5094 3153 S6
+5308 2826 S6
+5522 2500 S6
+5736 2826 S6
+5950 2826 S6
+6164 2500 S6
+6377 2826 S6
+6591 2826 S6
+6805 2826 S6
+7019 2826 S6
+4957 4217 S6
+% End plot #37
+% Begin plot #38
+1.000 UP
+1.000 UL
+LTb
+0.72 0.63 0.16 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 4137 M
+(ukbench00148.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.72 0.63 0.16 C 4829 4137 M
+255 0 V
+390 2826 M
+214 0 V
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 0 V
+214 -326 V
+214 653 V
+214 -327 V
+213 -326 V
+214 979 V
+214 -979 V
+214 653 V
+214 0 V
+214 -327 V
+213 653 V
+214 -979 V
+214 326 V
+214 -326 V
+214 0 V
+214 653 V
+213 0 V
+214 -653 V
+214 326 V
+214 0 V
+214 327 V
+214 -327 V
+213 0 V
+214 -326 V
+214 979 V
+214 -653 V
+390 2826 S7
+604 2826 S7
+818 2826 S7
+1032 2826 S7
+1245 3479 S7
+1459 2826 S7
+1673 2826 S7
+1887 2500 S7
+2101 3153 S7
+2315 2826 S7
+2528 2500 S7
+2742 3479 S7
+2956 2500 S7
+3170 3153 S7
+3384 3153 S7
+3598 2826 S7
+3811 3479 S7
+4025 2500 S7
+4239 2826 S7
+4453 2500 S7
+4667 2500 S7
+4881 3153 S7
+5094 3153 S7
+5308 2500 S7
+5522 2826 S7
+5736 2826 S7
+5950 3153 S7
+6164 2826 S7
+6377 2826 S7
+6591 2500 S7
+6805 3479 S7
+7019 2826 S7
+4957 4137 S7
+% End plot #38
+% Begin plot #39
+1.000 UP
+1.000 UL
+LTb
+0.85 0.37 0.10 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 4057 M
+(ukbench00154.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.85 0.37 0.10 C 4829 4057 M
+255 0 V
+390 2500 M
+214 0 V
+214 0 V
+214 326 V
+213 327 V
+214 0 V
+214 0 V
+214 -327 V
+214 -326 V
+214 0 V
+213 653 V
+214 0 V
+214 -327 V
+214 653 V
+214 -979 V
+214 326 V
+213 653 V
+214 -326 V
+214 326 V
+214 0 V
+214 -979 V
+214 979 V
+213 -979 V
+214 0 V
+214 326 V
+214 0 V
+214 327 V
+214 -653 V
+213 979 V
+214 -653 V
+214 653 V
+214 -326 V
+390 2500 S8
+604 2500 S8
+818 2500 S8
+1032 2826 S8
+1245 3153 S8
+1459 3153 S8
+1673 3153 S8
+1887 2826 S8
+2101 2500 S8
+2315 2500 S8
+2528 3153 S8
+2742 3153 S8
+2956 2826 S8
+3170 3479 S8
+3384 2500 S8
+3598 2826 S8
+3811 3479 S8
+4025 3153 S8
+4239 3479 S8
+4453 3479 S8
+4667 2500 S8
+4881 3479 S8
+5094 2500 S8
+5308 2500 S8
+5522 2826 S8
+5736 2826 S8
+5950 3153 S8
+6164 2500 S8
+6377 3479 S8
+6591 2826 S8
+6805 3479 S8
+7019 3153 S8
+4957 4057 S8
+% End plot #39
+% Begin plot #40
+1.000 UP
+1.000 UL
+LTb
+0.54 0.15 0.52 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 3977 M
+(ukbench00158.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.54 0.15 0.52 C 4829 3977 M
+255 0 V
+390 3479 M
+604 2826 L
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 0 V
+214 327 V
+214 0 V
+214 -327 V
+213 327 V
+214 326 V
+214 -326 V
+214 -327 V
+214 327 V
+214 -653 V
+213 979 V
+214 -979 V
+214 326 V
+214 0 V
+214 0 V
+214 0 V
+213 327 V
+214 -653 V
+214 0 V
+214 0 V
+214 326 V
+214 0 V
+213 -326 V
+214 0 V
+214 979 V
+214 -326 V
+390 3479 S9
+604 2826 S9
+818 2826 S9
+1032 2826 S9
+1245 3479 S9
+1459 2826 S9
+1673 2826 S9
+1887 3153 S9
+2101 3153 S9
+2315 2826 S9
+2528 3153 S9
+2742 3479 S9
+2956 3153 S9
+3170 2826 S9
+3384 3153 S9
+3598 2500 S9
+3811 3479 S9
+4025 2500 S9
+4239 2826 S9
+4453 2826 S9
+4667 2826 S9
+4881 2826 S9
+5094 3153 S9
+5308 2500 S9
+5522 2500 S9
+5736 2500 S9
+5950 2826 S9
+6164 2826 S9
+6377 2500 S9
+6591 2500 S9
+6805 3479 S9
+7019 3153 S9
+4957 3977 S9
+% End plot #40
+% Begin plot #41
+1.000 UP
+1.000 UL
+LTb
+0.62 0.06 0.06 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 3897 M
+(ukbench00163.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.62 0.06 0.06 C 4829 3897 M
+255 0 V
+390 2500 M
+214 0 V
+214 0 V
+214 0 V
+213 979 V
+214 -979 V
+214 0 V
+214 653 V
+214 -653 V
+214 653 V
+213 -327 V
+214 653 V
+214 -653 V
+214 -326 V
+214 0 V
+214 326 V
+213 327 V
+214 -653 V
+214 0 V
+214 326 V
+214 -326 V
+214 0 V
+213 0 V
+214 0 V
+214 0 V
+214 326 V
+214 -326 V
+214 326 V
+213 -326 V
+214 0 V
+214 653 V
+214 -653 V
+390 2500 S10
+604 2500 S10
+818 2500 S10
+1032 2500 S10
+1245 3479 S10
+1459 2500 S10
+1673 2500 S10
+1887 3153 S10
+2101 2500 S10
+2315 3153 S10
+2528 2826 S10
+2742 3479 S10
+2956 2826 S10
+3170 2500 S10
+3384 2500 S10
+3598 2826 S10
+3811 3153 S10
+4025 2500 S10
+4239 2500 S10
+4453 2826 S10
+4667 2500 S10
+4881 2500 S10
+5094 2500 S10
+5308 2500 S10
+5522 2500 S10
+5736 2826 S10
+5950 2500 S10
+6164 2826 S10
+6377 2500 S10
+6591 2500 S10
+6805 3153 S10
+7019 2500 S10
+4957 3897 S10
+% End plot #41
+% Begin plot #42
+1.000 UP
+1.000 UL
+LTb
+0.12 0.62 0.62 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 3817 M
+(ukbench00166.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.12 0.62 0.62 C 4829 3817 M
+255 0 V
+390 2500 M
+214 326 V
+214 0 V
+214 0 V
+213 327 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 653 V
+214 -979 V
+214 326 V
+214 -326 V
+214 0 V
+213 653 V
+214 -653 V
+214 326 V
+214 0 V
+214 0 V
+214 0 V
+213 -326 V
+214 0 V
+214 326 V
+214 0 V
+214 -326 V
+214 0 V
+213 326 V
+214 -326 V
+214 653 V
+214 -653 V
+390 2500 S11
+604 2826 S11
+818 2826 S11
+1032 2826 S11
+1245 3153 S11
+1459 2500 S11
+1673 2500 S11
+1887 2500 S11
+2101 2500 S11
+2315 2500 S11
+2528 2826 S11
+2742 3479 S11
+2956 2500 S11
+3170 2826 S11
+3384 2500 S11
+3598 2500 S11
+3811 3153 S11
+4025 2500 S11
+4239 2826 S11
+4453 2826 S11
+4667 2826 S11
+4881 2826 S11
+5094 2500 S11
+5308 2500 S11
+5522 2826 S11
+5736 2826 S11
+5950 2500 S11
+6164 2500 S11
+6377 2826 S11
+6591 2500 S11
+6805 3153 S11
+7019 2500 S11
+4957 3817 S11
+% End plot #42
+% Begin plot #43
+1.000 UP
+1.000 UL
+LTb
+0.10 0.75 0.20 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 3737 M
+(ukbench00170.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.10 0.75 0.20 C 4829 3737 M
+255 0 V
+390 2826 M
+604 2500 L
+214 0 V
+214 653 V
+213 326 V
+214 -326 V
+214 -327 V
+214 327 V
+214 0 V
+214 -653 V
+213 326 V
+214 653 V
+214 -326 V
+214 326 V
+214 -653 V
+214 -326 V
+213 979 V
+214 -979 V
+214 653 V
+214 -327 V
+214 -326 V
+214 979 V
+213 -326 V
+214 -653 V
+214 653 V
+214 -653 V
+214 653 V
+214 -327 V
+213 0 V
+214 -326 V
+214 653 V
+214 0 V
+390 2826 S12
+604 2500 S12
+818 2500 S12
+1032 3153 S12
+1245 3479 S12
+1459 3153 S12
+1673 2826 S12
+1887 3153 S12
+2101 3153 S12
+2315 2500 S12
+2528 2826 S12
+2742 3479 S12
+2956 3153 S12
+3170 3479 S12
+3384 2826 S12
+3598 2500 S12
+3811 3479 S12
+4025 2500 S12
+4239 3153 S12
+4453 2826 S12
+4667 2500 S12
+4881 3479 S12
+5094 3153 S12
+5308 2500 S12
+5522 3153 S12
+5736 2500 S12
+5950 3153 S12
+6164 2826 S12
+6377 2826 S12
+6591 2500 S12
+6805 3153 S12
+7019 3153 S12
+4957 3737 S12
+% End plot #43
+% Begin plot #44
+1.000 UP
+1.000 UL
+LTb
+0.23 0.73 0.49 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 3657 M
+(ukbench00173.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.23 0.73 0.49 C 4829 3657 M
+255 0 V
+390 2500 M
+214 326 V
+214 0 V
+214 0 V
+213 327 V
+214 -327 V
+214 0 V
+214 327 V
+214 -653 V
+214 653 V
+213 -653 V
+214 653 V
+214 0 V
+214 -653 V
+214 326 V
+214 -326 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 326 V
+214 -326 V
+214 0 V
+214 653 V
+213 -653 V
+214 0 V
+214 653 V
+214 -327 V
+390 2500 S13
+604 2826 S13
+818 2826 S13
+1032 2826 S13
+1245 3153 S13
+1459 2826 S13
+1673 2826 S13
+1887 3153 S13
+2101 2500 S13
+2315 3153 S13
+2528 2500 S13
+2742 3153 S13
+2956 3153 S13
+3170 2500 S13
+3384 2826 S13
+3598 2500 S13
+3811 3153 S13
+4025 2500 S13
+4239 2500 S13
+4453 2500 S13
+4667 2500 S13
+4881 2500 S13
+5094 2826 S13
+5308 2500 S13
+5522 2826 S13
+5736 2500 S13
+5950 2500 S13
+6164 3153 S13
+6377 2500 S13
+6591 2500 S13
+6805 3153 S13
+7019 2826 S13
+4957 3657 S13
+% End plot #44
+% Begin plot #45
+1.000 UP
+1.000 UL
+LTb
+0.38 0.49 0.15 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+5900 3577 M
+(ukbench00177.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.38 0.49 0.15 C 4829 3577 M
+255 0 V
+390 2500 M
+214 653 V
+214 0 V
+214 -327 V
+213 653 V
+214 -979 V
+214 0 V
+214 0 V
+214 0 V
+214 326 V
+213 -326 V
+214 979 V
+214 -979 V
+214 0 V
+214 326 V
+214 -326 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -326 V
+214 0 V
+214 326 V
+214 -326 V
+214 326 V
+213 -326 V
+214 0 V
+214 653 V
+214 -653 V
+390 2500 S14
+604 3153 S14
+818 3153 S14
+1032 2826 S14
+1245 3479 S14
+1459 2500 S14
+1673 2500 S14
+1887 2500 S14
+2101 2500 S14
+2315 2826 S14
+2528 2500 S14
+2742 3479 S14
+2956 2500 S14
+3170 2500 S14
+3384 2826 S14
+3598 2500 S14
+3811 3153 S14
+4025 2500 S14
+4239 2500 S14
+4453 2500 S14
+4667 2500 S14
+4881 2500 S14
+5094 2826 S14
+5308 2500 S14
+5522 2500 S14
+5736 2826 S14
+5950 2500 S14
+6164 2826 S14
+6377 2500 S14
+6591 2500 S14
+6805 3153 S14
+7019 2500 S14
+4957 3577 S14
+% End plot #45
+% Begin plot #46
+1.000 UP
+1.000 UL
+LTb
+0.24 0.75 0.62 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 4217 M
+(ukbench00182.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.24 0.75 0.62 C 5948 4217 M
+255 0 V
+390 3153 M
+214 0 V
+214 0 V
+214 0 V
+213 326 V
+214 -653 V
+214 0 V
+214 0 V
+214 327 V
+214 0 V
+213 -327 V
+214 653 V
+214 -653 V
+214 0 V
+214 327 V
+214 0 V
+213 326 V
+214 -326 V
+214 -327 V
+214 0 V
+214 -326 V
+214 326 V
+213 653 V
+214 -979 V
+214 653 V
+214 -653 V
+214 326 V
+214 327 V
+213 -327 V
+214 -326 V
+214 979 V
+214 -653 V
+390 3153 S15
+604 3153 S15
+818 3153 S15
+1032 3153 S15
+1245 3479 S15
+1459 2826 S15
+1673 2826 S15
+1887 2826 S15
+2101 3153 S15
+2315 3153 S15
+2528 2826 S15
+2742 3479 S15
+2956 2826 S15
+3170 2826 S15
+3384 3153 S15
+3598 3153 S15
+3811 3479 S15
+4025 3153 S15
+4239 2826 S15
+4453 2826 S15
+4667 2500 S15
+4881 2826 S15
+5094 3479 S15
+5308 2500 S15
+5522 3153 S15
+5736 2500 S15
+5950 2826 S15
+6164 3153 S15
+6377 2826 S15
+6591 2500 S15
+6805 3479 S15
+7019 2826 S15
+6076 4217 S15
+% End plot #46
+% Begin plot #47
+1.000 UP
+1.000 UL
+LTb
+0.91 0.66 0.03 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 4137 M
+(ukbench00185.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.91 0.66 0.03 C 5948 4137 M
+255 0 V
+390 2826 M
+214 0 V
+214 0 V
+214 327 V
+213 326 V
+214 -653 V
+214 0 V
+214 327 V
+214 -327 V
+214 327 V
+213 -653 V
+214 979 V
+214 -326 V
+214 0 V
+214 -327 V
+214 -326 V
+213 979 V
+214 -979 V
+214 653 V
+214 -653 V
+214 0 V
+214 653 V
+213 -327 V
+214 0 V
+214 327 V
+214 -653 V
+214 326 V
+214 327 V
+213 0 V
+214 -327 V
+214 653 V
+214 -653 V
+390 2826 D0
+604 2826 D0
+818 2826 D0
+1032 3153 D0
+1245 3479 D0
+1459 2826 D0
+1673 2826 D0
+1887 3153 D0
+2101 2826 D0
+2315 3153 D0
+2528 2500 D0
+2742 3479 D0
+2956 3153 D0
+3170 3153 D0
+3384 2826 D0
+3598 2500 D0
+3811 3479 D0
+4025 2500 D0
+4239 3153 D0
+4453 2500 D0
+4667 2500 D0
+4881 3153 D0
+5094 2826 D0
+5308 2826 D0
+5522 3153 D0
+5736 2500 D0
+5950 2826 D0
+6164 3153 D0
+6377 3153 D0
+6591 2826 D0
+6805 3479 D0
+7019 2826 D0
+6076 4137 D0
+% End plot #47
+% Begin plot #48
+1.000 UP
+1.000 UL
+LTb
+0.56 0.04 0.47 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 4057 M
+(ukbench00188.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.56 0.04 0.47 C 5948 4057 M
+255 0 V
+390 2500 M
+214 653 V
+214 0 V
+214 -653 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 653 V
+214 326 V
+214 -979 V
+214 326 V
+214 0 V
+214 327 V
+213 326 V
+214 -326 V
+214 0 V
+214 0 V
+214 0 V
+214 -327 V
+213 0 V
+214 327 V
+214 -653 V
+214 653 V
+214 0 V
+214 -653 V
+213 653 V
+214 0 V
+214 326 V
+214 -326 V
+390 2500 D1
+604 3153 D1
+818 3153 D1
+1032 2500 D1
+1245 3153 D1
+1459 2500 D1
+1673 2500 D1
+1887 2500 D1
+2101 2500 D1
+2315 2500 D1
+2528 3153 D1
+2742 3479 D1
+2956 2500 D1
+3170 2826 D1
+3384 2826 D1
+3598 3153 D1
+3811 3479 D1
+4025 3153 D1
+4239 3153 D1
+4453 3153 D1
+4667 3153 D1
+4881 2826 D1
+5094 2826 D1
+5308 3153 D1
+5522 2500 D1
+5736 3153 D1
+5950 3153 D1
+6164 2500 D1
+6377 3153 D1
+6591 3153 D1
+6805 3479 D1
+7019 3153 D1
+6076 4057 D1
+% End plot #48
+% Begin plot #49
+1.000 UP
+1.000 UL
+LTb
+0.10 0.38 0.82 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3977 M
+(ukbench00193.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.10 0.38 0.82 C 5948 3977 M
+255 0 V
+390 2826 M
+214 0 V
+214 0 V
+214 -326 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 326 V
+214 -326 V
+213 0 V
+214 653 V
+214 -653 V
+214 0 V
+214 326 V
+214 -326 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 326 V
+214 -326 V
+213 326 V
+214 -326 V
+214 0 V
+214 326 V
+214 -326 V
+214 0 V
+213 0 V
+214 0 V
+214 979 V
+214 -979 V
+390 2826 D2
+604 2826 D2
+818 2826 D2
+1032 2500 D2
+1245 3153 D2
+1459 2500 D2
+1673 2500 D2
+1887 2500 D2
+2101 2826 D2
+2315 2500 D2
+2528 2500 D2
+2742 3153 D2
+2956 2500 D2
+3170 2500 D2
+3384 2826 D2
+3598 2500 D2
+3811 3153 D2
+4025 2500 D2
+4239 2500 D2
+4453 2500 D2
+4667 2826 D2
+4881 2500 D2
+5094 2826 D2
+5308 2500 D2
+5522 2500 D2
+5736 2826 D2
+5950 2500 D2
+6164 2500 D2
+6377 2500 D2
+6591 2500 D2
+6805 3479 D2
+7019 2500 D2
+6076 3977 D2
+% End plot #49
+% Begin plot #50
+1.000 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3897 M
+(ukbench00196.jpg) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C 5948 3897 M
+255 0 V
+390 2500 M
+214 0 V
+214 0 V
+214 326 V
+213 327 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 0 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 653 V
+214 -653 V
+214 0 V
+214 0 V
+214 0 V
+214 0 V
+213 0 V
+214 326 V
+214 0 V
+214 0 V
+214 -326 V
+214 0 V
+213 0 V
+214 326 V
+214 0 V
+214 -326 V
+390 2500 D2
+604 2500 D2
+818 2500 D2
+1032 2826 D2
+1245 3153 D2
+1459 2500 D2
+1673 2500 D2
+1887 2500 D2
+2101 2500 D2
+2315 2500 D2
+2528 2500 D2
+2742 2500 D2
+2956 2500 D2
+3170 2500 D2
+3384 2500 D2
+3598 2500 D2
+3811 3153 D2
+4025 2500 D2
+4239 2500 D2
+4453 2500 D2
+4667 2500 D2
+4881 2500 D2
+5094 2500 D2
+5308 2826 D2
+5522 2826 D2
+5736 2826 D2
+5950 2500 D2
+6164 2500 D2
+6377 2500 D2
+6591 2826 D2
+6805 2826 D2
+7019 2500 D2
+6076 3897 D2
+% End plot #50
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+390 3479 N
+0 -979 V
+6629 0 V
+0 979 V
+-6629 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

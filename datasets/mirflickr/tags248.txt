@@ -1,4 +1,0 @@
-paws
-berks
-cat
-notmycat

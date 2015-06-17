@@ -1,12 +1,11 @@
 import operator
-import os
 import gzip
 import pickle
 
 from logger import logger
 from utils import recursive_list_dir, distribute
 from image import Image
-from vocabulary import Kmeans, Som
+from vocabulary import Kmeans, Som, BoW
 
 
 default_filename = 'album.pickle.gz'
@@ -38,7 +37,7 @@ class Album(object):
     def __init__(self, directory='.', vocabulary_size=1000,
                  feature_method='surf', clustering_method='kmeans',
                  segment_method=None, noise_ratio=0.2, max_samples=0,
-                 do_distribute=False):
+                 do_distribute=False, vocabulary=None, filenames=None):
         self.images = []
         self.vocabulary = None
         self.directory = directory
@@ -46,62 +45,92 @@ class Album(object):
         self.clustering_method = clustering_method
         self.max_samples = max_samples
         self.do_distribute = do_distribute
+        self.segment_method = segment_method
 
-        if os.path.exists(default_filename):
-            self.load()
+        if vocabulary is not None:
+            self.vocabulary = vocabulary
+            self.feature_method = vocabulary.get_feature_method()
+
         if len(self.images) <= 0:
-            self.import_images()
-        if self.vocabulary is None:
-            self.compute_vocabulary(vocabulary_size, method=clustering_method)
-            self.compute_words()
-            self.compute_noisy_words(gamma=noise_ratio)
-            if segment_method is not None:
-                if self.do_distribute and False:
-                    self.images = distribute(worker_f_compute_sentences,
-                                             segment_method,
-                                             self.images)
-                else:
-                    self.images = [image.compute_sentences(segment_method) for image in self.images]
-            else:
-                logger.warn("No segment_method: Skipping sentences mapping")
+            self.images = self.import_images(directory=directory, filenames=filenames)
 
-    def import_images(self):
+        if self.vocabulary is None:
+            self.vocabulary = self.compute_vocabulary(vocabulary_size,
+                                                      self.images,
+                                                      method=clustering_method)
+            self.images = self.compute_words(self.images)
+            self.compute_noisy_words(gamma=noise_ratio)
+        else:
+            self.images = self.compute_words(self.images)
+        self.images = self.set_noisy_words(self.images)
+        self.images = self.compute_segments(self.images, self.segment_method)
+
+    def compute_segments(self, images, segment_method):
+        logger.debug('Started compute_segments')
+        if segment_method is not None:
+            if self.do_distribute and False:
+                images = distribute(worker_f_compute_sentences,
+                                    segment_method,
+                                    images)
+            else:
+                images = [image.compute_sentences(segment_method) for image in images]
+        else:
+            logger.warn("No segment_method: Skipping sentences mapping")
+        logger.debug('Completed compute_segments')
+        return images
+
+    def create_test_images(self, directory=None, filenames=None):
+        logger.debug('Started create_test_images')
+        testimages = self.import_images(directory=directory, filenames=filenames)
+        testimages = self.compute_words(testimages)
+        testimages = self.set_noisy_words(testimages)
+        testimages = self.compute_segments(testimages, self.segment_method)
+        logger.debug('Completed create_test_images')
+        return testimages
+
+    def import_images(self, directory=None, filenames=None):
         logger.debug('Started import_images')
-        filenames = recursive_list_dir(self.directory)
-        self.images = [
+        if directory is not None:
+            filenames = recursive_list_dir(directory)
+        else:
+            filenames = filenames
+        images = [
             Image(fn) for fn in filenames
         ]
         if self.do_distribute:
-            self.images = distribute(worker_f_compute_raw_words,
-                                     self.feature_method,
-                                     self.images)
+            images = distribute(worker_f_compute_raw_words,
+                                self.feature_method,
+                                self.images)
         else:
-            self.images = [image.compute_raw_words(self.feature_method) for image in self.images]
+            images = [image.compute_raw_words(self.feature_method) for image in images]
 
         logger.debug('Completed import_images')
+        return images
 
-    def compute_vocabulary(self, size, method='kmeans'):
-        assert len(self.images) > 0
+    def compute_vocabulary(self, size, images, method='kmeans'):
         logger.debug('Started compute_vocabulary')
+        assert len(images) > 0
 
-        self.vocabulary = Album.get_clustering(method)
-        if self.vocabulary.get_size() <= 0:
-            data = []
-            for image in self.images:
-                for word in image.words:
-                    data.append(word.descriptor)
-            self.vocabulary.train(data, size,
-                                  max_samples=self.max_samples)
+        vocabulary = Album.get_clustering(method)
+        vocabulary.set_feature_method(self.feature_method)
+
+        data = []
+        for image in images:
+            for word in image.words:
+                data.append(word.descriptor)
+        vocabulary.train(data, size,
+                         max_samples=self.max_samples)
         logger.debug('Completed compute_vocabulary')
+        return vocabulary
 
-    def compute_words(self):
-        assert len(self.images) > 0
+    def compute_words(self, images):
+        assert len(images) > 0
         assert self.vocabulary is not None
         logger.debug('Started compute_words')
-        self.images = distribute(worker_f_compute_words, self.vocabulary,
-                                 self.images)
-        self.images = sorted(self.images, key=lambda x: x.filename)
+        images = distribute(worker_f_compute_words, self.vocabulary, images)
+        images = sorted(images, key=lambda x: x.filename)
         logger.debug('Completed compute_words')
+        return images
 
     @staticmethod
     def get_clustering(method):
@@ -109,6 +138,8 @@ class Album(object):
             return Kmeans()
         elif method == 'som':
             return Som()
+        elif method == 'none':
+            return BoW()
         else:
             raise Exception(
                 'Unsupported clustering method: {method}'.format(
@@ -132,10 +163,6 @@ class Album(object):
         noisy_words_count = int(gamma * size) / 2
         logger.debug('Stop words count: %d', noisy_words_count)
         total = sum(counts)
-        for k, v in counts_sorted[size - noisy_words_count:]:
-            ratio = v / float(total)
-            logger.debug('%d is stop word, %d (%r) occurences' % (k, v, ratio))
-            self._set_noise(k)
 
         logger.debug('Low frequency words count: %d', noisy_words_count)
         for k, v in counts_sorted[:noisy_words_count]:
@@ -145,12 +172,19 @@ class Album(object):
                 v,
                 ratio
             ))
-            self._set_noise(k)
+            self.vocabulary.add_noise(k)
 
         logger.debug('Completed compute_noisy_words')
 
-    def _set_noise(self, idx):
-        for image in self.images:
+    def set_noisy_words(self, images):
+        logger.debug('Started set_noisy_words')
+        for idx in self.vocabulary.noise:
+            self._set_noise(idx, images)
+        logger.debug('Completed set_noisy_words')
+        return images
+
+    def _set_noise(self, idx, images):
+        for image in images:
             for word in image.words:
                 if idx == word.value:
                     word.set_noise(True)

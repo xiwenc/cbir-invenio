@@ -1,0 +1,81 @@
+builddir = build
+ukbench_outdir = $(builddir)/ukbench
+mirflickr_outdir = $(builddir)/mirflickr
+
+all:
+
+mirflickr-graphs:
+	python2 generate-dat.py mirflickr
+
+clean:
+	rm -rf $(builddir)
+
+ukbench:
+	mkdir -p $(ukbench_outdir)
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments sift kmeans 1000 0.2 > $(ukbench_outdir)/sift-kmeans-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny lsi segments sift kmeans 1000 0.2 > $(ukbench_outdir)/sift-kmeans-1000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu lsi segments sift kmeans 1000 0.2 > $(ukbench_outdir)/sift-kmeans-1000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic tfidf segments sift kmeans 1000 0.2 > $(ukbench_outdir)/sift-kmeans-1000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny tfidf segments sift kmeans 1000 0.2 > $(ukbench_outdir)/sift-kmeans-1000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu tfidf segments sift kmeans 1000 0.2 > $(ukbench_outdir)/sift-kmeans-1000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments sift som 1000 0.2 > $(ukbench_outdir)/sift-som-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training none bow images sift kmeans 1000 0.2 > $(ukbench_outdir)/sift-kmeans-1000-02-none-bow-images.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments surf kmeans 1000 0.2 > $(ukbench_outdir)/surf-kmeans-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny lsi segments surf kmeans 1000 0.2 > $(ukbench_outdir)/surf-kmeans-1000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu lsi segments surf kmeans 1000 0.2 > $(ukbench_outdir)/surf-kmeans-1000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic tfidf segments surf kmeans 1000 0.2 > $(ukbench_outdir)/surf-kmeans-1000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny tfidf segments surf kmeans 1000 0.2 > $(ukbench_outdir)/surf-kmeans-1000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu tfidf segments surf kmeans 1000 0.2 > $(ukbench_outdir)/surf-kmeans-1000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments surf som 1000 0.2 > $(ukbench_outdir)/surf-som-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training none bow images surf kmeans 1000 0.2 > $(ukbench_outdir)/surf-kmeans-1000-02-none-bow-images.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments sift kmeans 2000 0.2 > $(ukbench_outdir)/sift-kmeans-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny lsi segments sift kmeans 2000 0.2 > $(ukbench_outdir)/sift-kmeans-2000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu lsi segments sift kmeans 2000 0.2 > $(ukbench_outdir)/sift-kmeans-2000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic tfidf segments sift kmeans 2000 0.2 > $(ukbench_outdir)/sift-kmeans-2000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny tfidf segments sift kmeans 2000 0.2 > $(ukbench_outdir)/sift-kmeans-2000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu tfidf segments sift kmeans 2000 0.2 > $(ukbench_outdir)/sift-kmeans-2000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments sift som 2000 0.2 > $(ukbench_outdir)/sift-som-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training none bow images sift kmeans 2000 0.2 > $(ukbench_outdir)/sift-kmeans-2000-02-none-bow-images.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments surf kmeans 2000 0.2 > $(ukbench_outdir)/surf-kmeans-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny lsi segments surf kmeans 2000 0.2 > $(ukbench_outdir)/surf-kmeans-2000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu lsi segments surf kmeans 2000 0.2 > $(ukbench_outdir)/surf-kmeans-2000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic tfidf segments surf kmeans 2000 0.2 > $(ukbench_outdir)/surf-kmeans-2000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training canny tfidf segments surf kmeans 2000 0.2 > $(ukbench_outdir)/surf-kmeans-2000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training otsu tfidf segments surf kmeans 2000 0.2 > $(ukbench_outdir)/surf-kmeans-2000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training slic lsi segments surf som 2000 0.2 > $(ukbench_outdir)/surf-som-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/ukbench-training none bow images surf kmeans 2000 0.2 > $(ukbench_outdir)/surf-kmeans-2000-02-none-bow-images.results
+
+mirflickr:
+	mkdir -p $(mirflickr_outdir)
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments sift kmeans 1000 0.2 > $(mirflickr_outdir)/sift-kmeans-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny lsi segments sift kmeans 1000 0.2 > $(mirflickr_outdir)/sift-kmeans-1000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu lsi segments sift kmeans 1000 0.2 > $(mirflickr_outdir)/sift-kmeans-1000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic tfidf segments sift kmeans 1000 0.2 > $(mirflickr_outdir)/sift-kmeans-1000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny tfidf segments sift kmeans 1000 0.2 > $(mirflickr_outdir)/sift-kmeans-1000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu tfidf segments sift kmeans 1000 0.2 > $(mirflickr_outdir)/sift-kmeans-1000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments sift som 1000 0.2 > $(mirflickr_outdir)/sift-som-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training none bow images sift kmeans 1000 0.2 > $(mirflickr_outdir)/sift-kmeans-1000-02-none-bow-images.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments surf kmeans 1000 0.2 > $(mirflickr_outdir)/surf-kmeans-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny lsi segments surf kmeans 1000 0.2 > $(mirflickr_outdir)/surf-kmeans-1000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu lsi segments surf kmeans 1000 0.2 > $(mirflickr_outdir)/surf-kmeans-1000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic tfidf segments surf kmeans 1000 0.2 > $(mirflickr_outdir)/surf-kmeans-1000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny tfidf segments surf kmeans 1000 0.2 > $(mirflickr_outdir)/surf-kmeans-1000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu tfidf segments surf kmeans 1000 0.2 > $(mirflickr_outdir)/surf-kmeans-1000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments surf som 1000 0.2 > $(mirflickr_outdir)/surf-som-1000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training none bow images surf kmeans 1000 0.2 > $(mirflickr_outdir)/surf-kmeans-1000-02-none-bow-images.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments sift kmeans 2000 0.2 > $(mirflickr_outdir)/sift-kmeans-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny lsi segments sift kmeans 2000 0.2 > $(mirflickr_outdir)/sift-kmeans-2000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu lsi segments sift kmeans 2000 0.2 > $(mirflickr_outdir)/sift-kmeans-2000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic tfidf segments sift kmeans 2000 0.2 > $(mirflickr_outdir)/sift-kmeans-2000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny tfidf segments sift kmeans 2000 0.2 > $(mirflickr_outdir)/sift-kmeans-2000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu tfidf segments sift kmeans 2000 0.2 > $(mirflickr_outdir)/sift-kmeans-2000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments sift som 2000 0.2 > $(mirflickr_outdir)/sift-som-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training none bow images sift kmeans 2000 0.2 > $(mirflickr_outdir)/sift-kmeans-2000-02-none-bow-images.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments surf kmeans 2000 0.2 > $(mirflickr_outdir)/surf-kmeans-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny lsi segments surf kmeans 2000 0.2 > $(mirflickr_outdir)/surf-kmeans-2000-02-canny-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu lsi segments surf kmeans 2000 0.2 > $(mirflickr_outdir)/surf-kmeans-2000-02-otsu-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic tfidf segments surf kmeans 2000 0.2 > $(mirflickr_outdir)/surf-kmeans-2000-02-slic-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training canny tfidf segments surf kmeans 2000 0.2 > $(mirflickr_outdir)/surf-kmeans-2000-02-canny-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training otsu tfidf segments surf kmeans 2000 0.2 > $(mirflickr_outdir)/surf-kmeans-2000-02-otsu-tfidf-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training slic lsi segments surf som 2000 0.2 > $(mirflickr_outdir)/surf-som-2000-02-slic-lsi-segments.results
+	python2 execute-configuration.py ../datasets/mirflickr-training none bow images surf kmeans 2000 0.2 > $(mirflickr_outdir)/surf-kmeans-2000-02-none-bow-images.results

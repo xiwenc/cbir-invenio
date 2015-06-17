@@ -1,0 +1,12 @@
+cataratas
+fervenzas
+ríasbaixas
+galicia
+spain
+españa
+dsch2
+conlafamilia
+geo:lat=42605695
+geo:lon=8623066
+geotagged
+autostitch

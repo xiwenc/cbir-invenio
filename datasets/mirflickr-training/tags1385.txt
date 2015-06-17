@@ -1,0 +1,5 @@
+portugal
+geo:lat=37085845
+geo:lon=872911
+geotagged
+praiadaluz

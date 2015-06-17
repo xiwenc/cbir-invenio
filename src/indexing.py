@@ -110,6 +110,9 @@ class CorporaOfSentences(object):
                 else:
                     result = [max(i, j) for i, j in zip(result, sims)]
 
+        if result is None:
+            result = []
+
         fitness = {}
         for i, j in list(enumerate(result)):
             filename = self.index[i].filename

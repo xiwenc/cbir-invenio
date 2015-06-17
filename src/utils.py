@@ -101,7 +101,11 @@ def extract_fname_id_test(name):
 def extract_tags(fname):
     tags_file = fname.replace(".jpg", ".txt").replace("/im", "/tags")
     if not os.path.exists(tags_file):
-        tags_file = "datasets/mirflickr/" + tags_file.replace("im", "tags")
+        tags_file = "../datasets/mirflickr/" + tags_file.replace("im", "tags")
+    if not os.path.exists(tags_file):
+        tags_file = tags_file.replace("/mirflickr/", "/mirflickr-test/")
+    if not os.path.exists(tags_file):
+        tags_file = tags_file.replace("/mirflickr-test/", "/mirflickr-training/")
     with open(tags_file, "r") as f:
         tags = [i.strip() for i in f.readlines()]
     return tags
@@ -131,13 +135,12 @@ def result_test_ukbench(target, retrieved, everything, groupsize=4):
 
 def result_test_mirflickr(target, retrieved, everything, min_common_tags=1):
     target_tags = extract_tags(target)
-    assert len(target_tags) > min_common_tags
     retrieved_ids = map(extract_id, retrieved)
 
     relevant_ids = []
     for fname in everything:
         current_tags = extract_tags(fname)
-        common = set(target_tags).intersection(set(current_tags))
+        common = set(target_tags) & set(current_tags)
         if len(common) >= min_common_tags:
             relevant_ids.append(extract_id(fname))
     return (relevant_ids, retrieved_ids)
@@ -204,15 +207,15 @@ def is_rectangle_unwrapped(rectangle, rectangles):
     return True
 
 
-def recall_and_precision_mirflickr(target, images, distance_function,
-                                   indexer=None, corpora=None):
+def compute_similarities(target, images, distance_function,
+                         indexer=None, corpora=None):
     image1 = target
     results = {}
     if indexer and corpora:
         results = corpora.similarity(indexer, image1)
     else:
         for image2 in images:
-            if len(image2.sentences) <= 0:
+            if len(image2.words) <= 0:
                 results[image2.filename] = 0
             else:
                 results[image2.filename] = distance_function(image1, image2)
@@ -222,6 +225,14 @@ def recall_and_precision_mirflickr(target, images, distance_function,
         key=operator.itemgetter(1),
         reverse=True
     )
+    return results_sorted
+
+
+def recall_and_precision_mirflickr(target, images, distance_function,
+                                   indexer=None, corpora=None):
+    image1 = target
+    results_sorted = compute_similarities(target, images, distance_function,
+                                          indexer=indexer, corpora=corpora)
 
     all_filenames = [k for k, v in results_sorted]
     relevant, _ = result_test_mirflickr(target.filename, [], all_filenames)
@@ -255,21 +266,8 @@ def recall_and_precision_mirflickr(target, images, distance_function,
 def recall_and_precision_ukbench(target, images, distance_function,
                                  indexer=None, corpora=None):
     image1 = target
-    results = {}
-    if indexer and corpora:
-        results = corpora.similarity(indexer, image1)
-    else:
-        for image2 in images:
-            if len(image2.sentences) <= 0:
-                results[image2.filename] = 0
-            else:
-                results[image2.filename] = distance_function(image1, image2)
-
-    results_sorted = sorted(
-        results.iteritems(),
-        key=operator.itemgetter(1),
-        reverse=True
-    )
+    results_sorted = compute_similarities(target, images, distance_function,
+                                          indexer=indexer, corpora=corpora)
 
     all_filenames = [k for k, v in results_sorted]
     relevant, _ = result_test_ukbench(target.filename, [], all_filenames)
@@ -346,3 +344,46 @@ def recall_and_precision(images, distance_function, indexer=None,
         ))
         assert recalls[k] >= 0
         assert precisions[k] >= 0
+
+
+def tagname_to_imagename(name):
+    return name.replace('tags', 'im').replace('.txt', '.jpg')
+
+
+def retrieve_matches(targets, basket):
+    matches = []
+    targets_set = set(targets)
+    for name, tags in basket.iteritems():
+        if len(targets_set & set(tags)) > 0:
+            matches.append(name)
+    return matches
+
+
+def read_image_tags(mirflickr, suffix):
+    training_images = {}
+    training_path = mirflickr + suffix
+    for i in os.listdir(training_path):
+        if i.startswith('tags'):
+            with open(os.path.join(training_path, i), "r") as f:
+                tags = [l.strip() for l in f.readlines()]
+            training_images[tagname_to_imagename(i)] = tags
+    return training_images
+
+
+def mirflickr_images():
+    mirflickr = os.path.join('..', 'datasets', 'mirflickr')
+    test_images = read_image_tags(mirflickr, "-test")
+    training_images = read_image_tags(mirflickr, "-training")
+
+    results_tags = {}
+    results_matches = {}
+    for name, tags in test_images.iteritems():
+        tags_count = len(tags)
+        image_matches = retrieve_matches(tags, training_images)
+        matches_count = len(image_matches)
+        results_tags[name] = tags_count
+        results_matches[name] = matches_count
+
+    sorted_results_matches = sorted(results_matches.iteritems(), key=operator.itemgetter(1))
+    sorted_names = [name for name, matches in sorted_results_matches]
+    return sorted_names, results_tags, results_matches

@@ -1,9 +1,0 @@
-canon
-40d
-sigma
-18200os
-fgr
-water
-washinghands
-texture
-explored

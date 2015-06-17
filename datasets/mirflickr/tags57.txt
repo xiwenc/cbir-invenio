@@ -1,3 +1,0 @@
-forest
-blur
-defocus

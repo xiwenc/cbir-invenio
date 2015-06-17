@@ -1,4 +1,0 @@
-subway
-motion
-blur
-explore

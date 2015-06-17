@@ -1,0 +1,6324 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: build/mirflickr-recall.eps
+%%Creator: gnuplot 5.0 patchlevel 0
+%%CreationDate: Mon Jun 15 23:16:23 2015
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 266
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -33 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 266 lineto 50 266 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.0 (Dec 2014)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (build/mirflickr-recall.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.0 patchlevel 0)
+  /Author (xcheng)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Mon Jun 15 23:16:23 2015)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%
+% Support for boxed text - Ethan A Merritt May 2005
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { Boxing
+    { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if } def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox 1 1 1 setrgbcolor fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 100 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 4320.00 BoxColFill} if
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+/Helvetica findfont 100 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+270 760 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 760 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 0)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+270 1126 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 1126 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 1)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+270 1491 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 1491 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 2)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+270 1857 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 1857 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 3)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+270 2222 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 2222 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 4)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+270 2588 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 2588 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 5)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+270 2953 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 2953 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 6)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+270 3319 M
+63 0 V
+6686 0 R
+-63 0 V
+stroke
+210 3319 M
+[ [(Helvetica) 100.0 0.0 true true 0 ( 7)]
+] -33.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+402 760 M
+stroke
+402 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im7959.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+535 760 M
+stroke
+535 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im3522.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+667 760 M
+stroke
+667 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im13718.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+799 760 M
+stroke
+799 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im14149.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+932 760 M
+stroke
+932 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im3439.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1064 760 M
+stroke
+1064 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im23288.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1196 760 M
+stroke
+1196 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im22496.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1329 760 M
+stroke
+1329 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im2177.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1461 760 M
+stroke
+1461 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im5735.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1593 760 M
+stroke
+1593 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im551.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1726 760 M
+stroke
+1726 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im8431.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1858 760 M
+stroke
+1858 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im14985.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1990 760 M
+stroke
+1990 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im12527.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2123 760 M
+stroke
+2123 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im7652.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2255 760 M
+stroke
+2255 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im13487.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2387 760 M
+stroke
+2387 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im22309.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2520 760 M
+stroke
+2520 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im24440.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2652 760 M
+stroke
+2652 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im23589.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2784 760 M
+stroke
+2784 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im16499.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+2917 760 M
+stroke
+2917 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im12155.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3049 760 M
+stroke
+3049 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im5473.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3181 760 M
+stroke
+3181 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im4810.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3314 760 M
+stroke
+3314 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im7590.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3446 760 M
+stroke
+3446 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im16864.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3578 760 M
+stroke
+3578 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im23739.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3711 760 M
+stroke
+3711 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im20283.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3843 760 M
+stroke
+3843 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im4904.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+3975 760 M
+stroke
+3975 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im24766.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4108 760 M
+stroke
+4108 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im24413.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4240 760 M
+stroke
+4240 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im12387.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4372 760 M
+stroke
+4372 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im14251.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4505 760 M
+stroke
+4505 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im3430.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4637 760 M
+stroke
+4637 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im2764.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4769 760 M
+stroke
+4769 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im160.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+4902 760 M
+stroke
+4902 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im21314.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5034 760 M
+stroke
+5034 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im10711.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5166 760 M
+stroke
+5166 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im22656.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5299 760 M
+stroke
+5299 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im23056.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5431 760 M
+stroke
+5431 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im16953.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5563 760 M
+stroke
+5563 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im10943.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5696 760 M
+stroke
+5696 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im8726.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5828 760 M
+stroke
+5828 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im6766.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+5960 760 M
+stroke
+5960 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im11070.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6093 760 M
+stroke
+6093 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im6637.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6225 760 M
+stroke
+6225 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im3511.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6357 760 M
+stroke
+6357 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im7576.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6490 760 M
+stroke
+6490 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im3474.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6622 760 M
+stroke
+6622 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im4696.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6754 760 M
+stroke
+6754 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im13098.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+6887 760 M
+stroke
+6887 700 M
+currentpoint gsave translate -90 rotate 0 0 moveto
+[ [(Helvetica) 100.0 0.0 true true 0 (im6856.jpg)]
+] -33.3 MLshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+270 3319 N
+270 760 L
+6749 0 V
+0 2559 V
+-6749 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LTb
+0.48 0.14 0.56 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 4217 M
+(sift-kmeans-1000-02-canny-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.48 0.14 0.56 C 1.000 254 4197 255 40 BoxColFill
+254 4197 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.48 0.14 0.56 C 1.000 2189 760 133 367 BoxColFill
+2189 760 N
+0 366 V
+132 0 V
+0 -366 V
+-132 0 V
+Z stroke
+1.000 3645 760 133 123 BoxColFill
+3645 760 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 4306 760 134 123 BoxColFill
+4306 760 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 760 133 92 BoxColFill
+4439 760 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 5497 760 134 62 BoxColFill
+5497 760 N
+0 61 V
+133 0 V
+0 -61 V
+-133 0 V
+Z stroke
+1.000 5762 760 133 38 BoxColFill
+5762 760 N
+0 37 V
+132 0 V
+0 -37 V
+-132 0 V
+Z stroke
+1.000 5894 760 134 34 BoxColFill
+5894 760 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 760 133 34 BoxColFill
+6027 760 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6159 760 133 34 BoxColFill
+6159 760 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6291 760 134 67 BoxColFill
+6291 760 N
+0 66 V
+133 0 V
+0 -66 V
+-133 0 V
+Z stroke
+1.000 6821 760 133 57 BoxColFill
+6821 760 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+% End plot #1
+% Begin plot #2
+1.000 UL
+LTb
+0.43 0.82 0.25 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 4137 M
+(sift-kmeans-2000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.43 0.82 0.25 C 1.000 254 4117 255 40 BoxColFill
+254 4117 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.43 0.82 0.25 C 1.000 2189 1126 133 1 BoxColFill
+2189 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 882 133 1 BoxColFill
+3645 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 760 134 92 BoxColFill
+3909 760 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4306 882 134 92 BoxColFill
+4306 882 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 851 133 1 BoxColFill
+4439 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 760 133 62 BoxColFill
+5233 760 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 5497 821 134 1 BoxColFill
+5497 821 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5762 797 133 1 BoxColFill
+5762 797 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 793 134 34 BoxColFill
+5894 793 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 793 133 32 BoxColFill
+6027 793 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6159 793 133 68 BoxColFill
+6159 793 N
+0 67 V
+132 0 V
+0 -67 V
+-132 0 V
+Z stroke
+1.000 6291 826 134 30 BoxColFill
+6291 826 N
+0 29 V
+133 0 V
+0 -29 V
+-133 0 V
+Z stroke
+1.000 6424 760 133 29 BoxColFill
+6424 760 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 760 133 57 BoxColFill
+6556 760 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+1.000 6688 760 134 74 BoxColFill
+6688 760 N
+0 73 V
+133 0 V
+0 -73 V
+-133 0 V
+Z stroke
+1.000 6821 816 133 1 BoxColFill
+6821 816 N
+132 0 V
+-132 0 V
+Z stroke
+% End plot #2
+% Begin plot #3
+1.000 UL
+LTb
+0.62 0.02 0.38 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 4057 M
+(sift-kmeans-2000-02-slic-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.62 0.02 0.38 C 1.000 254 4037 255 40 BoxColFill
+254 4037 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.62 0.02 0.38 C 1.000 2189 1126 133 1 BoxColFill
+2189 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 882 133 1 BoxColFill
+3645 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4306 973 134 93 BoxColFill
+4306 973 N
+0 92 V
+133 0 V
+0 -92 V
+-133 0 V
+Z stroke
+1.000 4439 851 133 1 BoxColFill
+4439 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 821 133 62 BoxColFill
+5233 821 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 5497 821 134 1 BoxColFill
+5497 821 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5762 797 133 1 BoxColFill
+5762 797 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 826 134 35 BoxColFill
+5894 826 N
+0 34 V
+133 0 V
+0 -34 V
+-133 0 V
+Z stroke
+1.000 6027 824 133 31 BoxColFill
+6027 824 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6159 860 133 67 BoxColFill
+6159 860 N
+0 66 V
+132 0 V
+0 -66 V
+-132 0 V
+Z stroke
+1.000 6291 855 134 29 BoxColFill
+6291 855 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 788 133 29 BoxColFill
+6424 788 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 816 133 57 BoxColFill
+6556 816 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+1.000 6688 833 134 50 BoxColFill
+6688 833 N
+0 49 V
+133 0 V
+0 -49 V
+-133 0 V
+Z stroke
+1.000 6821 816 133 1 BoxColFill
+6821 816 N
+132 0 V
+-132 0 V
+Z stroke
+% End plot #3
+% Begin plot #4
+1.000 UL
+LTb
+0.75 0.25 0.09 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3977 M
+(surf-kmeans-2000-02-otsu-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.75 0.25 0.09 C 1.000 254 3957 255 40 BoxColFill
+254 3957 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.75 0.25 0.09 C 1.000 2189 1126 133 1 BoxColFill
+2189 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 882 133 1 BoxColFill
+3645 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4306 1065 134 92 BoxColFill
+4306 1065 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 851 133 1 BoxColFill
+4439 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 760 133 74 BoxColFill
+4968 760 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 5233 882 133 1 BoxColFill
+5233 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 821 134 1 BoxColFill
+5497 821 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 760 133 53 BoxColFill
+5630 760 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5762 797 133 1 BoxColFill
+5762 797 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 860 134 74 BoxColFill
+5894 860 N
+0 73 V
+133 0 V
+0 -73 V
+-133 0 V
+Z stroke
+1.000 6027 854 133 1 BoxColFill
+6027 854 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 926 133 1 BoxColFill
+6159 926 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6291 883 134 1 BoxColFill
+6291 883 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 816 133 34 BoxColFill
+6424 816 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6556 872 133 35 BoxColFill
+6556 872 N
+0 34 V
+132 0 V
+0 -34 V
+-132 0 V
+Z stroke
+1.000 6688 882 134 105 BoxColFill
+6688 882 N
+0 104 V
+133 0 V
+0 -104 V
+-133 0 V
+Z stroke
+1.000 6821 816 133 86 BoxColFill
+6821 816 N
+0 85 V
+132 0 V
+0 -85 V
+-132 0 V
+Z stroke
+% End plot #4
+% Begin plot #5
+1.000 UL
+LTb
+0.89 0.20 0.69 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3897 M
+(sift-kmeans-1000-02-none-bow-images) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.89 0.20 0.69 C 1.000 254 3877 255 40 BoxColFill
+254 3877 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.89 0.20 0.69 C 1.000 2189 1126 133 366 BoxColFill
+2189 1126 N
+0 365 V
+132 0 V
+0 -365 V
+-132 0 V
+Z stroke
+1.000 3115 760 134 184 BoxColFill
+3115 760 N
+0 183 V
+133 0 V
+0 -183 V
+-133 0 V
+Z stroke
+1.000 3645 882 133 123 BoxColFill
+3645 882 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4174 760 133 92 BoxColFill
+4174 760 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 4306 1156 134 1 BoxColFill
+4306 1156 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 851 133 1 BoxColFill
+4439 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 833 133 1 BoxColFill
+4968 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 882 133 1 BoxColFill
+5233 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 821 134 1 BoxColFill
+5497 821 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 812 133 47 BoxColFill
+5630 812 N
+0 46 V
+132 0 V
+0 -46 V
+-132 0 V
+Z stroke
+1.000 5762 797 133 1 BoxColFill
+5762 797 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 933 134 1 BoxColFill
+5894 933 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 854 133 32 BoxColFill
+6027 854 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6159 926 133 1 BoxColFill
+6159 926 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6291 883 134 57 BoxColFill
+6291 883 N
+0 56 V
+133 0 V
+0 -56 V
+-133 0 V
+Z stroke
+1.000 6424 849 133 58 BoxColFill
+6424 849 N
+0 57 V
+132 0 V
+0 -57 V
+-132 0 V
+Z stroke
+1.000 6556 906 133 27 BoxColFill
+6556 906 N
+0 26 V
+132 0 V
+0 -26 V
+-132 0 V
+Z stroke
+1.000 6688 986 134 50 BoxColFill
+6688 986 N
+0 49 V
+133 0 V
+0 -49 V
+-133 0 V
+Z stroke
+1.000 6821 901 133 25 BoxColFill
+6821 901 N
+0 24 V
+132 0 V
+0 -24 V
+-132 0 V
+Z stroke
+% End plot #5
+% Begin plot #6
+1.000 UL
+LTb
+0.72 0.46 0.22 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3817 M
+(surf-kmeans-1000-02-otsu-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.72 0.46 0.22 C 1.000 254 3797 255 40 BoxColFill
+254 3797 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.72 0.46 0.22 C 1.000 2189 1491 133 1 BoxColFill
+2189 1491 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3645 1004 133 1 BoxColFill
+3645 1004 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1156 134 1 BoxColFill
+4306 1156 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 851 133 1 BoxColFill
+4439 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 833 133 1 BoxColFill
+4968 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 882 133 1 BoxColFill
+5233 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 821 134 1 BoxColFill
+5497 821 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 858 133 1 BoxColFill
+5630 858 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 797 133 1 BoxColFill
+5762 797 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 933 134 1 BoxColFill
+5894 933 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 885 133 31 BoxColFill
+6027 885 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6159 926 133 34 BoxColFill
+6159 926 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6291 939 134 1 BoxColFill
+6291 939 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 906 133 31 BoxColFill
+6424 906 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6556 932 133 31 BoxColFill
+6556 932 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6688 1035 134 50 BoxColFill
+6688 1035 N
+0 49 V
+133 0 V
+0 -49 V
+-133 0 V
+Z stroke
+1.000 6821 925 133 27 BoxColFill
+6821 925 N
+0 26 V
+132 0 V
+0 -26 V
+-132 0 V
+Z stroke
+% End plot #6
+% Begin plot #7
+1.000 UL
+LTb
+0.87 0.19 0.35 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3737 M
+(surf-kmeans-1000-02-otsu-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.87 0.19 0.35 C 1.000 254 3717 255 40 BoxColFill
+254 3717 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.87 0.19 0.35 C 1.000 2189 1491 133 1 BoxColFill
+2189 1491 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3645 1004 133 1 BoxColFill
+3645 1004 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1156 134 1 BoxColFill
+4306 1156 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 851 133 1 BoxColFill
+4439 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 833 133 1 BoxColFill
+4968 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 882 133 1 BoxColFill
+5233 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 821 134 1 BoxColFill
+5497 821 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 858 133 1 BoxColFill
+5630 858 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 797 133 1 BoxColFill
+5762 797 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 933 134 1 BoxColFill
+5894 933 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 915 133 32 BoxColFill
+6027 915 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6159 959 133 35 BoxColFill
+6159 959 N
+0 34 V
+132 0 V
+0 -34 V
+-132 0 V
+Z stroke
+1.000 6291 939 134 1 BoxColFill
+6291 939 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 936 133 32 BoxColFill
+6424 936 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6556 962 133 62 BoxColFill
+6556 962 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6688 1084 134 50 BoxColFill
+6688 1084 N
+0 49 V
+133 0 V
+0 -49 V
+-133 0 V
+Z stroke
+1.000 6821 951 133 27 BoxColFill
+6821 951 N
+0 26 V
+132 0 V
+0 -26 V
+-132 0 V
+Z stroke
+% End plot #7
+% Begin plot #8
+1.000 UL
+LTb
+0.31 0.17 0.61 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3657 M
+(surf-kmeans-2000-02-canny-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.31 0.17 0.61 C 1.000 254 3637 255 40 BoxColFill
+254 3637 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.31 0.17 0.61 C 1.000 2189 1491 133 1 BoxColFill
+2189 1491 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 760 133 184 BoxColFill
+3380 760 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 3645 1004 133 123 BoxColFill
+3645 1004 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1156 134 123 BoxColFill
+4306 1156 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 851 133 93 BoxColFill
+4439 851 N
+0 92 V
+132 0 V
+0 -92 V
+-132 0 V
+Z stroke
+1.000 4836 760 133 74 BoxColFill
+4836 760 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 4968 833 133 74 BoxColFill
+4968 833 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 5233 882 133 1 BoxColFill
+5233 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 760 133 53 BoxColFill
+5365 760 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5497 821 134 62 BoxColFill
+5497 821 N
+0 61 V
+133 0 V
+0 -61 V
+-133 0 V
+Z stroke
+1.000 5630 858 133 47 BoxColFill
+5630 858 N
+0 46 V
+132 0 V
+0 -46 V
+-132 0 V
+Z stroke
+1.000 5762 797 133 1 BoxColFill
+5762 797 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 933 134 1 BoxColFill
+5894 933 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 946 133 34 BoxColFill
+6027 946 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6159 993 133 34 BoxColFill
+6159 993 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6291 939 134 1 BoxColFill
+6291 939 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 967 133 57 BoxColFill
+6424 967 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+1.000 6556 1023 133 62 BoxColFill
+6556 1023 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6688 1133 134 25 BoxColFill
+6688 1133 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 977 133 86 BoxColFill
+6821 977 N
+0 85 V
+132 0 V
+0 -85 V
+-132 0 V
+Z stroke
+% End plot #8
+% Begin plot #9
+1.000 UL
+LTb
+0.24 0.09 0.88 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3577 M
+(sift-kmeans-1000-02-canny-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.24 0.09 0.88 C 1.000 254 3557 255 40 BoxColFill
+254 3557 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.24 0.09 0.88 C 1.000 2189 1491 133 367 BoxColFill
+2189 1491 N
+0 366 V
+132 0 V
+0 -366 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 943 133 1 BoxColFill
+3380 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1126 133 122 BoxColFill
+3645 1126 N
+0 121 V
+132 0 V
+0 -121 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1278 134 123 BoxColFill
+4306 1278 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 943 133 92 BoxColFill
+4439 943 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 4836 833 133 1 BoxColFill
+4836 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 906 133 1 BoxColFill
+4968 906 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 882 133 1 BoxColFill
+5233 882 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 812 133 1 BoxColFill
+5365 812 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 882 134 1 BoxColFill
+5497 882 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 904 133 1 BoxColFill
+5630 904 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 797 133 37 BoxColFill
+5762 797 N
+0 36 V
+132 0 V
+0 -36 V
+-132 0 V
+Z stroke
+1.000 5894 933 134 34 BoxColFill
+5894 933 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 979 133 34 BoxColFill
+6027 979 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6159 1026 133 34 BoxColFill
+6159 1026 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6291 939 134 67 BoxColFill
+6291 939 N
+0 66 V
+133 0 V
+0 -66 V
+-133 0 V
+Z stroke
+1.000 6424 1023 133 1 BoxColFill
+6424 1023 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6556 1084 133 1 BoxColFill
+6556 1084 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1157 134 1 BoxColFill
+6688 1157 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6821 1062 133 57 BoxColFill
+6821 1062 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+% End plot #9
+% Begin plot #10
+1.000 UL
+LTb
+0.31 0.39 0.78 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3497 M
+(surf-kmeans-1000-02-canny-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.31 0.39 0.78 C 1.000 254 3477 255 40 BoxColFill
+254 3477 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.31 0.39 0.78 C 1.000 2189 1857 133 1 BoxColFill
+2189 1857 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 760 133 184 BoxColFill
+2851 760 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 943 133 184 BoxColFill
+3380 943 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 3645 1247 133 1 BoxColFill
+3645 1247 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1400 134 123 BoxColFill
+4306 1400 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 1034 133 1 BoxColFill
+4439 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4836 833 133 1 BoxColFill
+4836 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 906 133 1 BoxColFill
+4968 906 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 882 133 53 BoxColFill
+5233 882 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5365 812 133 1 BoxColFill
+5365 812 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 882 134 1 BoxColFill
+5497 882 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 904 133 46 BoxColFill
+5630 904 N
+0 45 V
+132 0 V
+0 -45 V
+-132 0 V
+Z stroke
+1.000 5762 833 133 1 BoxColFill
+5762 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 966 134 68 BoxColFill
+5894 966 N
+0 67 V
+133 0 V
+0 -67 V
+-133 0 V
+Z stroke
+1.000 6027 1012 133 34 BoxColFill
+6027 1012 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6159 1059 133 68 BoxColFill
+6159 1059 N
+0 67 V
+132 0 V
+0 -67 V
+-132 0 V
+Z stroke
+1.000 6291 1005 134 1 BoxColFill
+6291 1005 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1023 133 29 BoxColFill
+6424 1023 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1084 133 93 BoxColFill
+6556 1084 N
+0 92 V
+132 0 V
+0 -92 V
+-132 0 V
+Z stroke
+1.000 6688 1157 134 1 BoxColFill
+6688 1157 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6821 1118 133 57 BoxColFill
+6821 1118 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+% End plot #10
+% Begin plot #11
+1.000 UL
+LTb
+0.29 0.83 0.44 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+2477 3417 M
+(surf-kmeans-1000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.29 0.83 0.44 C 1.000 254 3397 255 40 BoxColFill
+254 3397 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.29 0.83 0.44 C 1.000 2189 1857 133 1 BoxColFill
+2189 1857 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1126 133 1 BoxColFill
+3380 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1247 133 1 BoxColFill
+3645 1247 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 760 133 92 BoxColFill
+4042 760 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1522 134 92 BoxColFill
+4306 1522 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 1034 133 1 BoxColFill
+4439 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4836 833 133 1 BoxColFill
+4836 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 906 133 1 BoxColFill
+4968 906 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 934 133 53 BoxColFill
+5233 934 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5365 812 133 53 BoxColFill
+5365 812 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5497 882 134 1 BoxColFill
+5497 882 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 949 133 1 BoxColFill
+5630 949 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 833 133 34 BoxColFill
+5762 833 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 5894 1033 134 67 BoxColFill
+5894 1033 N
+0 66 V
+133 0 V
+0 -66 V
+-133 0 V
+Z stroke
+1.000 6027 1045 133 62 BoxColFill
+6027 1045 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6159 1126 133 61 BoxColFill
+6159 1126 N
+0 60 V
+132 0 V
+0 -60 V
+-132 0 V
+Z stroke
+1.000 6291 1005 134 30 BoxColFill
+6291 1005 N
+0 29 V
+133 0 V
+0 -29 V
+-133 0 V
+Z stroke
+1.000 6424 1051 133 29 BoxColFill
+6424 1051 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1176 133 53 BoxColFill
+6556 1176 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 6688 1157 134 25 BoxColFill
+6688 1157 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1174 133 50 BoxColFill
+6821 1174 N
+0 49 V
+132 0 V
+0 -49 V
+-132 0 V
+Z stroke
+% End plot #11
+% Begin plot #12
+1.000 UL
+LTb
+0.11 0.26 0.66 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 4217 M
+(sift-kmeans-2000-02-none-bow-images) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.11 0.26 0.66 C 1.000 2525 4197 255 40 BoxColFill
+2525 4197 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.11 0.26 0.66 C 1.000 2189 1857 133 366 BoxColFill
+2189 1857 N
+0 365 V
+132 0 V
+0 -365 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1126 133 1 BoxColFill
+3380 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1247 133 123 BoxColFill
+3645 1247 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1613 134 1 BoxColFill
+4306 1613 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 1034 133 1 BoxColFill
+4439 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4836 833 133 1 BoxColFill
+4836 833 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 906 133 1 BoxColFill
+4968 906 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 986 133 1 BoxColFill
+5233 986 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 864 133 1 BoxColFill
+5365 864 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 882 134 1 BoxColFill
+5497 882 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 949 133 1 BoxColFill
+5630 949 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 866 133 1 BoxColFill
+5762 866 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1099 134 1 BoxColFill
+5894 1099 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 1106 133 32 BoxColFill
+6027 1106 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6159 1186 133 1 BoxColFill
+6159 1186 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6291 1034 134 29 BoxColFill
+6291 1034 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 1079 133 57 BoxColFill
+6424 1079 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+1.000 6556 1228 133 53 BoxColFill
+6556 1228 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 6688 1181 134 26 BoxColFill
+6688 1181 N
+0 25 V
+133 0 V
+0 -25 V
+-133 0 V
+Z stroke
+1.000 6821 1223 133 25 BoxColFill
+6821 1223 N
+0 24 V
+132 0 V
+0 -24 V
+-132 0 V
+Z stroke
+% End plot #12
+% Begin plot #13
+1.000 UL
+LTb
+0.12 0.51 0.46 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 4137 M
+(surf-kmeans-2000-02-canny-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.12 0.51 0.46 C 1.000 2525 4117 255 40 BoxColFill
+2525 4117 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.12 0.51 0.46 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1126 133 1 BoxColFill
+3380 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1369 133 123 BoxColFill
+3645 1369 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1613 134 123 BoxColFill
+4306 1613 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 1034 133 184 BoxColFill
+4439 1034 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 4836 833 133 74 BoxColFill
+4836 833 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 4968 906 133 74 BoxColFill
+4968 906 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 5233 986 133 1 BoxColFill
+5233 986 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 864 133 1 BoxColFill
+5365 864 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 882 134 62 BoxColFill
+5497 882 N
+0 61 V
+133 0 V
+0 -61 V
+-133 0 V
+Z stroke
+1.000 5630 949 133 47 BoxColFill
+5630 949 N
+0 46 V
+132 0 V
+0 -46 V
+-132 0 V
+Z stroke
+1.000 5762 866 133 1 BoxColFill
+5762 866 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1099 134 1 BoxColFill
+5894 1099 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 1137 133 1 BoxColFill
+6027 1137 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1186 133 35 BoxColFill
+6159 1186 N
+0 34 V
+132 0 V
+0 -34 V
+-132 0 V
+Z stroke
+1.000 6291 1062 134 34 BoxColFill
+6291 1062 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6424 1135 133 58 BoxColFill
+6424 1135 N
+0 57 V
+132 0 V
+0 -57 V
+-132 0 V
+Z stroke
+1.000 6556 1280 133 62 BoxColFill
+6556 1280 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6688 1206 134 25 BoxColFill
+6688 1206 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1247 133 86 BoxColFill
+6821 1247 N
+0 85 V
+132 0 V
+0 -85 V
+-132 0 V
+Z stroke
+% End plot #13
+% Begin plot #14
+1.000 UL
+LTb
+0.88 0.22 0.30 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 4057 M
+(sift-kmeans-2000-02-otsu-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.88 0.22 0.30 C 1.000 2525 4037 255 40 BoxColFill
+2525 4037 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.88 0.22 0.30 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1126 133 1 BoxColFill
+3380 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1491 133 1 BoxColFill
+3645 1491 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1735 134 1 BoxColFill
+4306 1735 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4836 906 133 74 BoxColFill
+4836 906 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 986 133 1 BoxColFill
+5233 986 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 864 133 1 BoxColFill
+5365 864 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 943 134 1 BoxColFill
+5497 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 866 133 1 BoxColFill
+5762 866 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1099 134 1 BoxColFill
+5894 1099 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 1137 133 1 BoxColFill
+6027 1137 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1220 133 41 BoxColFill
+6159 1220 N
+0 40 V
+132 0 V
+0 -40 V
+-132 0 V
+Z stroke
+1.000 6291 1095 134 1 BoxColFill
+6291 1095 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1192 133 62 BoxColFill
+6424 1192 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6556 1341 133 1 BoxColFill
+6556 1341 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1230 134 1 BoxColFill
+6688 1230 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6821 1332 133 29 BoxColFill
+6821 1332 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+% End plot #14
+% Begin plot #15
+1.000 UL
+LTb
+0.20 0.69 0.07 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3977 M
+(sift-kmeans-2000-02-canny-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.20 0.69 0.07 C 1.000 2525 3957 255 40 BoxColFill
+2525 3957 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.20 0.69 0.07 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1126 133 1 BoxColFill
+3380 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1491 133 123 BoxColFill
+3645 1491 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1735 134 123 BoxColFill
+4306 1735 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4836 979 133 1 BoxColFill
+4836 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 986 133 54 BoxColFill
+5233 986 N
+0 53 V
+132 0 V
+0 -53 V
+-132 0 V
+Z stroke
+1.000 5365 864 133 1 BoxColFill
+5365 864 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 943 134 1 BoxColFill
+5497 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 866 133 74 BoxColFill
+5762 866 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 5894 1099 134 34 BoxColFill
+5894 1099 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1137 133 34 BoxColFill
+6027 1137 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6159 1260 133 1 BoxColFill
+6159 1260 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6291 1095 134 1 BoxColFill
+6291 1095 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1253 133 29 BoxColFill
+6424 1253 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1341 133 62 BoxColFill
+6556 1341 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6688 1230 134 25 BoxColFill
+6688 1230 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1360 133 29 BoxColFill
+6821 1360 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+% End plot #15
+% Begin plot #16
+1.000 UL
+LTb
+0.67 0.11 0.31 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3897 M
+(surf-som-2000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.67 0.11 0.31 C 1.000 2525 3877 255 40 BoxColFill
+2525 3877 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.67 0.11 0.31 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1126 133 1 BoxColFill
+3380 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 1 BoxColFill
+3645 1613 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 851 133 1 BoxColFill
+4174 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 1857 134 183 BoxColFill
+4306 1857 N
+0 182 V
+133 0 V
+0 -182 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 760 134 74 BoxColFill
+4703 760 N
+0 73 V
+133 0 V
+0 -73 V
+-133 0 V
+Z stroke
+1.000 4836 979 133 1 BoxColFill
+4836 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 1039 133 1 BoxColFill
+5233 1039 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 864 133 1 BoxColFill
+5365 864 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 943 134 53 BoxColFill
+5497 943 N
+0 52 V
+133 0 V
+0 -52 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 939 133 1 BoxColFill
+5762 939 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1132 134 34 BoxColFill
+5894 1132 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1170 133 92 BoxColFill
+6027 1170 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 6159 1260 133 1 BoxColFill
+6159 1260 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6291 1095 134 1 BoxColFill
+6291 1095 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1281 133 1 BoxColFill
+6424 1281 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6556 1402 133 1 BoxColFill
+6556 1402 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1254 134 26 BoxColFill
+6688 1254 N
+0 25 V
+133 0 V
+0 -25 V
+-133 0 V
+Z stroke
+1.000 6821 1388 133 50 BoxColFill
+6821 1388 N
+0 49 V
+132 0 V
+0 -49 V
+-132 0 V
+Z stroke
+% End plot #16
+% Begin plot #17
+1.000 UL
+LTb
+0.63 0.02 0.92 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3817 M
+(surf-kmeans-2000-02-none-bow-images) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.63 0.02 0.92 C 1.000 2525 3797 255 40 BoxColFill
+2525 3797 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.63 0.02 0.92 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1126 133 183 BoxColFill
+3380 1126 N
+0 182 V
+132 0 V
+0 -182 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 1 BoxColFill
+3645 1613 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 851 133 93 BoxColFill
+4174 851 N
+0 92 V
+132 0 V
+0 -92 V
+-132 0 V
+Z stroke
+1.000 4306 2039 134 93 BoxColFill
+4306 2039 N
+0 92 V
+133 0 V
+0 -92 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 979 133 1 BoxColFill
+4836 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 1039 133 1 BoxColFill
+5233 1039 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 864 133 54 BoxColFill
+5365 864 N
+0 53 V
+132 0 V
+0 -53 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 939 133 1 BoxColFill
+5762 939 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1165 134 35 BoxColFill
+5894 1165 N
+0 34 V
+133 0 V
+0 -34 V
+-133 0 V
+Z stroke
+1.000 6027 1261 133 32 BoxColFill
+6027 1261 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6159 1260 133 62 BoxColFill
+6159 1260 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6291 1095 134 29 BoxColFill
+6291 1095 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 1281 133 85 BoxColFill
+6424 1281 N
+0 84 V
+132 0 V
+0 -84 V
+-132 0 V
+Z stroke
+1.000 6556 1402 133 53 BoxColFill
+6556 1402 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 6688 1279 134 25 BoxColFill
+6688 1279 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1437 133 25 BoxColFill
+6821 1437 N
+0 24 V
+132 0 V
+0 -24 V
+-132 0 V
+Z stroke
+% End plot #17
+% Begin plot #18
+1.000 UL
+LTb
+0.80 0.97 0.13 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3737 M
+(surf-som-1000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.80 0.97 0.13 C 1.000 2525 3717 255 40 BoxColFill
+2525 3717 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.80 0.97 0.13 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 1 BoxColFill
+3645 1613 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 943 133 1 BoxColFill
+4174 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2131 134 92 BoxColFill
+4306 2131 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 979 133 1 BoxColFill
+4836 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 1039 133 1 BoxColFill
+5233 1039 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 917 133 1 BoxColFill
+5365 917 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 939 133 1 BoxColFill
+5762 939 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1199 134 67 BoxColFill
+5894 1199 N
+0 66 V
+133 0 V
+0 -66 V
+-133 0 V
+Z stroke
+1.000 6027 1292 133 1 BoxColFill
+6027 1292 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1321 133 93 BoxColFill
+6159 1321 N
+0 92 V
+132 0 V
+0 -92 V
+-132 0 V
+Z stroke
+1.000 6291 1123 134 29 BoxColFill
+6291 1123 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 1365 133 57 BoxColFill
+6424 1365 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+1.000 6556 1454 133 27 BoxColFill
+6556 1454 N
+0 26 V
+132 0 V
+0 -26 V
+-132 0 V
+Z stroke
+1.000 6688 1303 134 26 BoxColFill
+6688 1303 N
+0 25 V
+133 0 V
+0 -25 V
+-133 0 V
+Z stroke
+1.000 6821 1461 133 25 BoxColFill
+6821 1461 N
+0 24 V
+132 0 V
+0 -24 V
+-132 0 V
+Z stroke
+% End plot #18
+% Begin plot #19
+1.000 UL
+LTb
+0.85 0.92 0.04 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3657 M
+(sift-kmeans-1000-02-otsu-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.85 0.92 0.04 C 1.000 2525 3637 255 40 BoxColFill
+2525 3637 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.85 0.92 0.04 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 1 BoxColFill
+3645 1613 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 943 133 1 BoxColFill
+4174 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2222 134 1 BoxColFill
+4306 2222 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 979 133 1 BoxColFill
+4836 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 1039 133 1 BoxColFill
+5233 1039 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 917 133 1 BoxColFill
+5365 917 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 939 133 1 BoxColFill
+5762 939 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1265 134 1 BoxColFill
+5894 1265 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 1292 133 1 BoxColFill
+6027 1292 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1413 133 41 BoxColFill
+6159 1413 N
+0 40 V
+132 0 V
+0 -40 V
+-132 0 V
+Z stroke
+1.000 6291 1151 134 1 BoxColFill
+6291 1151 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1421 133 32 BoxColFill
+6424 1421 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6556 1480 133 1 BoxColFill
+6556 1480 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1328 134 25 BoxColFill
+6688 1328 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1485 133 29 BoxColFill
+6821 1485 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+% End plot #19
+% Begin plot #20
+1.000 UL
+LTb
+0.26 0.21 0.87 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3577 M
+(surf-kmeans-1000-02-slic-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.26 0.21 0.87 C 1.000 2525 3557 255 40 BoxColFill
+2525 3557 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.26 0.21 0.87 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 1 BoxColFill
+3645 1613 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 943 133 1 BoxColFill
+4174 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2222 134 93 BoxColFill
+4306 2222 N
+0 92 V
+133 0 V
+0 -92 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 979 133 1 BoxColFill
+4836 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 1039 133 53 BoxColFill
+5233 1039 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5365 917 133 53 BoxColFill
+5365 917 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 939 133 35 BoxColFill
+5762 939 N
+0 34 V
+132 0 V
+0 -34 V
+-132 0 V
+Z stroke
+1.000 5894 1265 134 68 BoxColFill
+5894 1265 N
+0 67 V
+133 0 V
+0 -67 V
+-133 0 V
+Z stroke
+1.000 6027 1292 133 62 BoxColFill
+6027 1292 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6159 1453 133 62 BoxColFill
+6159 1453 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6291 1151 134 29 BoxColFill
+6291 1151 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 1452 133 29 BoxColFill
+6424 1452 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1480 133 53 BoxColFill
+6556 1480 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 6688 1352 134 50 BoxColFill
+6688 1352 N
+0 49 V
+133 0 V
+0 -49 V
+-133 0 V
+Z stroke
+1.000 6821 1513 133 50 BoxColFill
+6821 1513 N
+0 49 V
+132 0 V
+0 -49 V
+-132 0 V
+Z stroke
+% End plot #20
+% Begin plot #21
+1.000 UL
+LTb
+0.41 0.12 0.63 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3497 M
+(sift-som-1000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.41 0.12 0.63 C 1.000 2525 3477 255 40 BoxColFill
+2525 3477 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.41 0.12 0.63 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 1 BoxColFill
+3645 1613 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 943 133 1 BoxColFill
+4174 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2314 134 1 BoxColFill
+4306 2314 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 979 133 1 BoxColFill
+4836 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 1 BoxColFill
+4968 979 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 1091 133 1 BoxColFill
+5233 1091 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 1 BoxColFill
+5365 969 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 973 133 1 BoxColFill
+5762 973 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1332 134 67 BoxColFill
+5894 1332 N
+0 66 V
+133 0 V
+0 -66 V
+-133 0 V
+Z stroke
+1.000 6027 1353 133 31 BoxColFill
+6027 1353 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6159 1514 133 1 BoxColFill
+6159 1514 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6291 1179 134 29 BoxColFill
+6291 1179 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 1480 133 29 BoxColFill
+6424 1480 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1532 133 30 BoxColFill
+6556 1532 N
+0 29 V
+132 0 V
+0 -29 V
+-132 0 V
+Z stroke
+1.000 6688 1401 134 25 BoxColFill
+6688 1401 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1562 133 50 BoxColFill
+6821 1562 N
+0 49 V
+132 0 V
+0 -49 V
+-132 0 V
+Z stroke
+% End plot #21
+% Begin plot #22
+1.000 UL
+LTb
+0.68 0.04 0.74 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+4748 3417 M
+(sift-kmeans-2000-02-otsu-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.68 0.04 0.74 C 1.000 2525 3397 255 40 BoxColFill
+2525 3397 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.68 0.04 0.74 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 1 BoxColFill
+3645 1613 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 943 133 92 BoxColFill
+4174 943 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 4306 2314 134 1 BoxColFill
+4306 2314 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 979 133 74 BoxColFill
+4836 979 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 4968 979 133 74 BoxColFill
+4968 979 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 5233 1091 133 1 BoxColFill
+5233 1091 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 1 BoxColFill
+5365 969 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 973 133 1 BoxColFill
+5762 973 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1398 134 1 BoxColFill
+5894 1398 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 1383 133 1 BoxColFill
+6027 1383 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1514 133 42 BoxColFill
+6159 1514 N
+0 41 V
+132 0 V
+0 -41 V
+-132 0 V
+Z stroke
+1.000 6291 1207 134 1 BoxColFill
+6291 1207 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1508 133 62 BoxColFill
+6424 1508 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6556 1561 133 1 BoxColFill
+6556 1561 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1425 134 25 BoxColFill
+6688 1425 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1611 133 57 BoxColFill
+6821 1611 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+% End plot #22
+% Begin plot #23
+1.000 UL
+LTb
+0.85 0.38 0.32 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 4217 M
+(sift-kmeans-2000-02-canny-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.85 0.38 0.32 C 1.000 4796 4197 255 40 BoxColFill
+4796 4197 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.85 0.38 0.32 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1613 133 123 BoxColFill
+3645 1613 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 1 BoxColFill
+3909 851 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2314 134 123 BoxColFill
+4306 2314 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1052 133 1 BoxColFill
+4836 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5233 1091 133 53 BoxColFill
+5233 1091 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 1 BoxColFill
+5365 969 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 973 133 74 BoxColFill
+5762 973 N
+0 73 V
+132 0 V
+0 -73 V
+-132 0 V
+Z stroke
+1.000 5894 1398 134 34 BoxColFill
+5894 1398 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1383 133 34 BoxColFill
+6027 1383 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6159 1555 133 1 BoxColFill
+6159 1555 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6291 1207 134 1 BoxColFill
+6291 1207 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1569 133 29 BoxColFill
+6424 1569 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1561 133 61 BoxColFill
+6556 1561 N
+0 60 V
+132 0 V
+0 -60 V
+-132 0 V
+Z stroke
+1.000 6688 1449 134 26 BoxColFill
+6688 1449 N
+0 25 V
+133 0 V
+0 -25 V
+-133 0 V
+Z stroke
+1.000 6821 1667 133 57 BoxColFill
+6821 1667 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+% End plot #23
+% Begin plot #24
+1.000 UL
+LTb
+0.47 0.46 0.13 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 4137 M
+(sift-kmeans-1000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.47 0.46 0.13 C 1.000 4796 4117 255 40 BoxColFill
+4796 4117 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.47 0.46 0.13 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 851 134 93 BoxColFill
+3909 851 N
+0 92 V
+133 0 V
+0 -92 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2436 134 92 BoxColFill
+4306 2436 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1052 133 1 BoxColFill
+4836 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 760 134 74 BoxColFill
+5100 760 N
+0 73 V
+133 0 V
+0 -73 V
+-133 0 V
+Z stroke
+1.000 5233 1143 133 1 BoxColFill
+5233 1143 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 1 BoxColFill
+5365 969 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 1 BoxColFill
+5630 995 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 1046 133 34 BoxColFill
+5762 1046 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 5894 1431 134 35 BoxColFill
+5894 1431 N
+0 34 V
+133 0 V
+0 -34 V
+-133 0 V
+Z stroke
+1.000 6027 1416 133 1 BoxColFill
+6027 1416 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1555 133 34 BoxColFill
+6159 1555 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6291 1207 134 1 BoxColFill
+6291 1207 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1597 133 57 BoxColFill
+6424 1597 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+1.000 6556 1621 133 1 BoxColFill
+6556 1621 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1474 134 25 BoxColFill
+6688 1474 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1723 133 26 BoxColFill
+6821 1723 N
+0 25 V
+132 0 V
+0 -25 V
+-132 0 V
+Z stroke
+% End plot #24
+% Begin plot #25
+1.000 UL
+LTb
+0.29 0.04 0.61 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 4057 M
+(surf-kmeans-2000-02-otsu-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.29 0.04 0.61 C 1.000 4796 4037 255 40 BoxColFill
+4796 4037 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.29 0.04 0.61 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 943 134 1 BoxColFill
+3909 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2527 134 92 BoxColFill
+4306 2527 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1052 133 1 BoxColFill
+4836 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 833 134 1 BoxColFill
+5100 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5233 1143 133 1 BoxColFill
+5233 1143 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 1 BoxColFill
+5365 969 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 995 133 53 BoxColFill
+5630 995 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5762 1079 133 1 BoxColFill
+5762 1079 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1465 134 74 BoxColFill
+5894 1465 N
+0 73 V
+133 0 V
+0 -73 V
+-133 0 V
+Z stroke
+1.000 6027 1416 133 1 BoxColFill
+6027 1416 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1588 133 38 BoxColFill
+6159 1588 N
+0 37 V
+132 0 V
+0 -37 V
+-132 0 V
+Z stroke
+1.000 6291 1207 134 1 BoxColFill
+6291 1207 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1653 133 34 BoxColFill
+6424 1653 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6556 1621 133 35 BoxColFill
+6556 1621 N
+0 34 V
+132 0 V
+0 -34 V
+-132 0 V
+Z stroke
+1.000 6688 1498 134 132 BoxColFill
+6688 1498 N
+0 131 V
+133 0 V
+0 -131 V
+-133 0 V
+Z stroke
+1.000 6821 1748 133 85 BoxColFill
+6821 1748 N
+0 84 V
+132 0 V
+0 -84 V
+-132 0 V
+Z stroke
+% End plot #25
+% Begin plot #26
+1.000 UL
+LTb
+0.02 0.33 0.62 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3977 M
+(sift-som-2000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.02 0.33 0.62 C 1.000 4796 3957 255 40 BoxColFill
+4796 3957 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.02 0.33 0.62 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 1 BoxColFill
+3380 1308 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 943 134 1 BoxColFill
+3909 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2618 134 1 BoxColFill
+4306 2618 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1052 133 1 BoxColFill
+4836 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 833 134 1 BoxColFill
+5100 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5233 1143 133 1 BoxColFill
+5233 1143 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 1 BoxColFill
+5365 969 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 1047 133 1 BoxColFill
+5630 1047 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 1079 133 1 BoxColFill
+5762 1079 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1538 134 34 BoxColFill
+5894 1538 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1416 133 1 BoxColFill
+6027 1416 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1625 133 34 BoxColFill
+6159 1625 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 6291 1207 134 29 BoxColFill
+6291 1207 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 1686 133 30 BoxColFill
+6424 1686 N
+0 29 V
+132 0 V
+0 -29 V
+-132 0 V
+Z stroke
+1.000 6556 1655 133 29 BoxColFill
+6556 1655 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6688 1629 134 49 BoxColFill
+6688 1629 N
+0 48 V
+133 0 V
+0 -48 V
+-133 0 V
+Z stroke
+1.000 6821 1832 133 25 BoxColFill
+6821 1832 N
+0 24 V
+132 0 V
+0 -24 V
+-132 0 V
+Z stroke
+% End plot #26
+% Begin plot #27
+1.000 UL
+LTb
+0.07 0.55 0.69 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3897 M
+(surf-kmeans-2000-02-slic-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.07 0.55 0.69 C 1.000 4796 3877 255 40 BoxColFill
+4796 3877 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.07 0.55 0.69 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 1 BoxColFill
+2851 943 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1308 133 184 BoxColFill
+3380 1308 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 943 134 92 BoxColFill
+3909 943 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2618 134 93 BoxColFill
+4306 2618 N
+0 92 V
+133 0 V
+0 -92 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1052 133 1 BoxColFill
+4836 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 833 134 1 BoxColFill
+5100 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5233 1143 133 1 BoxColFill
+5233 1143 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 1 BoxColFill
+5365 969 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 1047 133 1 BoxColFill
+5630 1047 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 1079 133 1 BoxColFill
+5762 1079 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1571 134 34 BoxColFill
+5894 1571 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1416 133 1 BoxColFill
+6027 1416 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1658 133 92 BoxColFill
+6159 1658 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 6291 1235 134 1 BoxColFill
+6291 1235 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1715 133 1 BoxColFill
+6424 1715 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6556 1683 133 27 BoxColFill
+6556 1683 N
+0 26 V
+132 0 V
+0 -26 V
+-132 0 V
+Z stroke
+1.000 6688 1677 134 50 BoxColFill
+6688 1677 N
+0 49 V
+133 0 V
+0 -49 V
+-133 0 V
+Z stroke
+1.000 6821 1856 133 26 BoxColFill
+6821 1856 N
+0 25 V
+132 0 V
+0 -25 V
+-132 0 V
+Z stroke
+% End plot #27
+% Begin plot #28
+1.000 UL
+LTb
+0.09 0.60 0.67 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3817 M
+(surf-kmeans-1000-02-canny-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.09 0.60 0.67 C 1.000 4796 3797 255 40 BoxColFill
+4796 3797 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.09 0.60 0.67 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 943 133 184 BoxColFill
+2851 943 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1491 133 184 BoxColFill
+3380 1491 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 1034 134 1 BoxColFill
+3909 1034 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2710 134 123 BoxColFill
+4306 2710 N
+0 122 V
+133 0 V
+0 -122 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1052 133 1 BoxColFill
+4836 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 833 134 1 BoxColFill
+5100 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5233 1143 133 53 BoxColFill
+5233 1143 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5365 969 133 53 BoxColFill
+5365 969 N
+0 52 V
+132 0 V
+0 -52 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 1047 133 47 BoxColFill
+5630 1047 N
+0 46 V
+132 0 V
+0 -46 V
+-132 0 V
+Z stroke
+1.000 5762 1079 133 1 BoxColFill
+5762 1079 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1604 134 34 BoxColFill
+5894 1604 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1416 133 68 BoxColFill
+6027 1416 N
+0 67 V
+132 0 V
+0 -67 V
+-132 0 V
+Z stroke
+1.000 6159 1749 133 68 BoxColFill
+6159 1749 N
+0 67 V
+132 0 V
+0 -67 V
+-132 0 V
+Z stroke
+1.000 6291 1235 134 35 BoxColFill
+6291 1235 N
+0 34 V
+133 0 V
+0 -34 V
+-133 0 V
+Z stroke
+1.000 6424 1715 133 29 BoxColFill
+6424 1715 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1709 133 92 BoxColFill
+6556 1709 N
+0 91 V
+132 0 V
+0 -91 V
+-132 0 V
+Z stroke
+1.000 6688 1726 134 1 BoxColFill
+6688 1726 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6821 1881 133 29 BoxColFill
+6821 1881 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+% End plot #28
+% Begin plot #29
+1.000 UL
+LTb
+0.67 0.08 0.36 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3737 M
+(sift-kmeans-1000-02-otsu-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.67 0.08 0.36 C 1.000 4796 3717 255 40 BoxColFill
+4796 3717 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.67 0.08 0.36 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 1126 133 1 BoxColFill
+2851 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1674 133 1 BoxColFill
+3380 1674 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 1034 134 1 BoxColFill
+3909 1034 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2832 134 1 BoxColFill
+4306 2832 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1052 133 75 BoxColFill
+4836 1052 N
+0 74 V
+132 0 V
+0 -74 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 833 134 1 BoxColFill
+5100 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5233 1195 133 1 BoxColFill
+5233 1195 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 1021 133 1 BoxColFill
+5365 1021 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 1093 133 1 BoxColFill
+5630 1093 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 1079 133 1 BoxColFill
+5762 1079 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1637 134 1 BoxColFill
+5894 1637 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6027 1483 133 1 BoxColFill
+6027 1483 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1816 133 41 BoxColFill
+6159 1816 N
+0 40 V
+132 0 V
+0 -40 V
+-132 0 V
+Z stroke
+1.000 6291 1269 134 1 BoxColFill
+6291 1269 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1743 133 31 BoxColFill
+6424 1743 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6556 1800 133 1 BoxColFill
+6556 1800 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1726 134 26 BoxColFill
+6688 1726 N
+0 25 V
+133 0 V
+0 -25 V
+-133 0 V
+Z stroke
+1.000 6821 1909 133 29 BoxColFill
+6821 1909 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+% End plot #29
+% Begin plot #30
+1.000 UL
+LTb
+0.15 0.87 0.09 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3657 M
+(sift-kmeans-1000-02-slic-tfidf-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.15 0.87 0.09 C 1.000 4796 3637 255 40 BoxColFill
+4796 3637 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.15 0.87 0.09 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 1126 133 1 BoxColFill
+2851 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1674 133 1 BoxColFill
+3380 1674 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 1034 134 1 BoxColFill
+3909 1034 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 1 BoxColFill
+4174 1034 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 2832 134 92 BoxColFill
+4306 2832 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1126 133 1 BoxColFill
+4836 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 833 134 74 BoxColFill
+5100 833 N
+0 73 V
+133 0 V
+0 -73 V
+-133 0 V
+Z stroke
+1.000 5233 1195 133 1 BoxColFill
+5233 1195 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 1021 133 1 BoxColFill
+5365 1021 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 1093 133 1 BoxColFill
+5630 1093 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 1079 133 34 BoxColFill
+5762 1079 N
+0 33 V
+132 0 V
+0 -33 V
+-132 0 V
+Z stroke
+1.000 5894 1637 134 35 BoxColFill
+5894 1637 N
+0 34 V
+133 0 V
+0 -34 V
+-133 0 V
+Z stroke
+1.000 6027 1483 133 1 BoxColFill
+6027 1483 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6159 1856 133 35 BoxColFill
+6159 1856 N
+0 34 V
+132 0 V
+0 -34 V
+-132 0 V
+Z stroke
+1.000 6291 1269 134 1 BoxColFill
+6291 1269 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1773 133 57 BoxColFill
+6424 1773 N
+0 56 V
+132 0 V
+0 -56 V
+-132 0 V
+Z stroke
+1.000 6556 1800 133 1 BoxColFill
+6556 1800 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 6688 1751 134 25 BoxColFill
+6688 1751 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1937 133 25 BoxColFill
+6821 1937 N
+0 24 V
+132 0 V
+0 -24 V
+-132 0 V
+Z stroke
+% End plot #30
+% Begin plot #31
+1.000 UL
+LTb
+0.08 0.98 0.44 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3577 M
+(surf-kmeans-1000-02-none-bow-images) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.08 0.98 0.44 C 1.000 4796 3557 255 40 BoxColFill
+4796 3557 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.08 0.98 0.44 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 1126 133 1 BoxColFill
+2851 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1674 133 1 BoxColFill
+3380 1674 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 1 BoxColFill
+3645 1735 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3909 1034 134 1 BoxColFill
+3909 1034 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1034 133 93 BoxColFill
+4174 1034 N
+0 92 V
+132 0 V
+0 -92 V
+-132 0 V
+Z stroke
+1.000 4306 2923 134 92 BoxColFill
+4306 2923 N
+0 91 V
+133 0 V
+0 -91 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1126 133 1 BoxColFill
+4836 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 906 134 1 BoxColFill
+5100 906 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5233 1195 133 1 BoxColFill
+5233 1195 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 1021 133 1 BoxColFill
+5365 1021 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 1093 133 1 BoxColFill
+5630 1093 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 1112 133 35 BoxColFill
+5762 1112 N
+0 34 V
+132 0 V
+0 -34 V
+-132 0 V
+Z stroke
+1.000 5894 1671 134 34 BoxColFill
+5894 1671 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1483 133 31 BoxColFill
+6027 1483 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6159 1890 133 31 BoxColFill
+6159 1890 N
+0 30 V
+132 0 V
+0 -30 V
+-132 0 V
+Z stroke
+1.000 6291 1269 134 29 BoxColFill
+6291 1269 N
+0 28 V
+133 0 V
+0 -28 V
+-133 0 V
+Z stroke
+1.000 6424 1829 133 86 BoxColFill
+6424 1829 N
+0 85 V
+132 0 V
+0 -85 V
+-132 0 V
+Z stroke
+1.000 6556 1800 133 80 BoxColFill
+6556 1800 N
+0 79 V
+132 0 V
+0 -79 V
+-132 0 V
+Z stroke
+1.000 6688 1775 134 25 BoxColFill
+6688 1775 N
+0 24 V
+133 0 V
+0 -24 V
+-133 0 V
+Z stroke
+1.000 6821 1961 133 26 BoxColFill
+6821 1961 N
+0 25 V
+132 0 V
+0 -25 V
+-132 0 V
+Z stroke
+% End plot #31
+% Begin plot #32
+1.000 UL
+LTb
+0.10 0.61 0.43 C /Helvetica findfont 100 scalefont setfont
+LCb setrgbcolor
+/Helvetica findfont 80 scalefont setfont
+/vshift -26 def
+7019 3497 M
+(surf-kmeans-2000-02-slic-lsi-segments) Rshow
+/Helvetica findfont 100 scalefont setfont
+/vshift -33 def
+1.000 UL
+LTb
+0.10 0.61 0.43 C 1.000 4796 3477 255 40 BoxColFill
+4796 3477 N
+255 0 V
+0 40 V
+-255 0 V
+0 -40 V
+Z stroke
+1.000 UL
+LTb
+0.10 0.61 0.43 C 1.000 2189 2222 133 1 BoxColFill
+2189 2222 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 2851 1126 133 1 BoxColFill
+2851 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 3115 943 134 1 BoxColFill
+3115 943 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 3380 1674 133 184 BoxColFill
+3380 1674 N
+0 183 V
+132 0 V
+0 -183 V
+-132 0 V
+Z stroke
+1.000 3645 1735 133 123 BoxColFill
+3645 1735 N
+0 122 V
+132 0 V
+0 -122 V
+-132 0 V
+Z stroke
+1.000 3909 1034 134 1 BoxColFill
+3909 1034 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4042 851 133 1 BoxColFill
+4042 851 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4174 1126 133 1 BoxColFill
+4174 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4306 3014 134 93 BoxColFill
+4306 3014 N
+0 92 V
+133 0 V
+0 -92 V
+-133 0 V
+Z stroke
+1.000 4439 1217 133 1 BoxColFill
+4439 1217 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4703 833 134 1 BoxColFill
+4703 833 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 4836 1126 133 1 BoxColFill
+4836 1126 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 4968 1052 133 1 BoxColFill
+4968 1052 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5100 906 134 1 BoxColFill
+5100 906 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5233 1195 133 1 BoxColFill
+5233 1195 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5365 1021 133 1 BoxColFill
+5365 1021 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5497 995 134 1 BoxColFill
+5497 995 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 5630 1093 133 1 BoxColFill
+5630 1093 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5762 1146 133 1 BoxColFill
+5762 1146 N
+132 0 V
+-132 0 V
+Z stroke
+1.000 5894 1704 134 34 BoxColFill
+5894 1704 N
+0 33 V
+133 0 V
+0 -33 V
+-133 0 V
+Z stroke
+1.000 6027 1513 133 32 BoxColFill
+6027 1513 N
+0 31 V
+132 0 V
+0 -31 V
+-132 0 V
+Z stroke
+1.000 6159 1920 133 62 BoxColFill
+6159 1920 N
+0 61 V
+132 0 V
+0 -61 V
+-132 0 V
+Z stroke
+1.000 6291 1297 134 1 BoxColFill
+6291 1297 N
+133 0 V
+-133 0 V
+Z stroke
+1.000 6424 1914 133 29 BoxColFill
+6424 1914 N
+0 28 V
+132 0 V
+0 -28 V
+-132 0 V
+Z stroke
+1.000 6556 1879 133 27 BoxColFill
+6556 1879 N
+0 26 V
+132 0 V
+0 -26 V
+-132 0 V
+Z stroke
+1.000 6688 1799 134 50 BoxColFill
+6688 1799 N
+0 49 V
+133 0 V
+0 -49 V
+-133 0 V
+Z stroke
+1.000 6821 1986 133 25 BoxColFill
+6821 1986 N
+0 24 V
+132 0 V
+0 -24 V
+-132 0 V
+Z stroke
+% End plot #32
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+270 3319 N
+270 760 L
+6749 0 V
+0 2559 V
+-6749 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

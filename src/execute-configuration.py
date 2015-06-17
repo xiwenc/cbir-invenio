@@ -1,5 +1,4 @@
 import sys
-import os
 
 sys.path.append('src/')
 from album import Album
@@ -10,13 +9,15 @@ from similarity import SentenceDiff
 
 
 def test():
+    training_directory = dataset + "-training"
     album = Album(directory=dataset,
                   feature_method=feature_method,
                   clustering_method=clustering_method,
                   segment_method=segment_method,
                   vocabulary_size=vocabulary_size,
                   noise_ratio=noise_ratio,
-                  max_samples=10000
+                  max_samples=10000,
+                  training_directory=training_directory
                   )
 
     if similarity_method == 'lsi' and corpus_mode == 'segments':
@@ -35,11 +36,9 @@ def test():
         corpora = None
         indexer = None
 
-    mirflickr_targets = ['im102.jpg', 'im109.jpg', 'im125.jpg', 'im79.jpg']
-
-    for i in range(4):
+    for i in range(3, 400, 4):
+        target_image = album.images[i]
         if 'ukbench' in dataset:
-            target_image = album.images[i * 4]
             if corpora and indexer:
                 recall, precision, results = recall_and_precision_ukbench(
                     target_image, album.images, None, indexer=indexer,
@@ -48,11 +47,6 @@ def test():
                 recall, precision, results = recall_and_precision_ukbench(
                     target_image, album.images, SentenceDiff.distance)
         elif 'mirflickr' in dataset:
-            target_image = None
-            for image in album.images:
-                if os.path.basename(image.filename) == mirflickr_targets[i]:
-                    target_image = image
-
             if corpora and indexer:
                 recall, precision, results = recall_and_precision_mirflickr(
                     target_image, album.images, None, indexer=indexer,
