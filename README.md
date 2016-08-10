@@ -3,14 +3,16 @@ Installation
 ==
 
 download opencv-2.4.8
+```bash
 cmake -D CMAKE_INSTALL_PREFIX=/home/xcheng/apps/opencv ../
 
 export PYTHONPATH=~/apps/opencv/lib/python2.7/dist-packages
 export DYLD_LIBRARY_PATH=~/apps/opencv/lib
-
+```
 
 Third parties
 ===
+```bash
 apt-get liblapack-dev gfortran
 
 apt-get build-dep python-gtk2
@@ -26,3 +28,4 @@ cd ../
 wget http://ftp.gnome.org/pub/GNOME/sources/pygobject/3.10/pygobject-3.10.2.tar.xz
 tar xf pygobject-3.10.2.tar.xz
 cd pygobject-3.10.2
+```
